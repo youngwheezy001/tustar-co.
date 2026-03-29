@@ -5,7 +5,9 @@
  */
 
 const ORACLE_CONFIG = {
-    BACKEND_URL: "http://127.0.0.1:3001/api/chat",
+    BACKEND_URL: window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost"
+        ? "http://127.0.0.1:3001/api/chat"
+        : "https://tustar-api.onrender.com/api/chat", // Replace with your Render URL
     DEFAULT_SENDER: "NEXUS ORACLE"
 };
 
