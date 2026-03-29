@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tustar Co. Case Study - Comprehensive Deep Dive.">
+    <title>Tustar Co. | Mission Dossier: CityGrub UX</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-dark text-white font-mono">
+    <!-- V37 Premium Industrial Drone Preloader -->
+    <div id="cinematic-preloader">
+        <!-- Telemetry Background Stream -->
+        <div class="loader-telemetry" id="loader-telemetry"></div>
+        
+        <div class="loader-content">
+            <div class="logo-wrap">
+                <img src="assets/logo.jpg" class="loader-logo" alt="TUSTAR CO.">
+                <div class="scan-ring"></div>
+            </div>
+            
+            <div class="drone-orbit-system">
+                <div class="drone-path">
+                    <div class="industrial-drone">
+                        <svg viewBox="0 0 100 100" class="drone-svg">
+                            <!-- Industrial Drone Body -->
+                            <path d="M30 50 L70 50 L65 60 L35 60 Z" fill="var(--accent-color)" opacity="0.8"/>
+                            <rect x="45" y="45" width="10" height="15" fill="#fff" />
+                            <!-- Rotors -->
+                            <circle cx="30" cy="50" r="12" fill="none" stroke="var(--accent-color)" stroke-width="1" stroke-dasharray="4 2"/>
+                            <circle cx="70" cy="50" r="12" fill="none" stroke="var(--accent-color)" stroke-width="1" stroke-dasharray="4 2"/>
+                            <!-- Landing Gear -->
+                            <path d="M35 60 L30 70 M65 60 L70 70" stroke="var(--accent-color)" stroke-width="2"/>
+                            <!-- Lens/Camera -->
+                            <circle cx="50" cy="58" r="3" fill="#ff0000" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="loader-status-container">
+                <div class="loader-percentage">00%</div>
+                <div class="loader-label">INITIALIZING_ASSETS...</div>
+            </div>
+        </div>
+    </div>
+    <div id="transition-wipe"></div>
+    <div class="global-grain"></div>
+    <div class="system-cursor" id="system-cursor"></div>
+
+    <nav id="navbar">
+        <a href="index.html" class="nav-brand" style="display:flex; align-items:center; gap:15px;"><img src="assets/logo.jpg" alt="TUSTAR CO." style="height:40px; width:auto; border-radius:3px; box-shadow: 0 0 10px rgba(0,255,49,0.2);"> TUSTAR CO.</a>
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="services.html">SERVICES</a>
+            <a href="projects.html" class="active">PROJECTS</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div class="nav-status" style="border-color:var(--accent-color); color:var(--accent-color);">PROJECT_FILE_ACTIVE</div>
+    </nav>
+
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+            
+            <!-- 1.0 Dossier Header -->
+            <header class="section hq-header" style="padding-top:25vh; min-height:80vh; position:relative; overflow:hidden;">
+                <div style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:-1; opacity:0.3; background:linear-gradient(rgba(5,8,17,0.7), rgba(5,8,17,1)), url('assets/project-01.jpg'); background-size:cover; background-position:center;"></div>
+                <div style="padding:0 5vw;">
+                    <p style="font-family:var(--font-mono); color:var(--accent-color); margin-bottom:20px; letter-spacing:8px;">// CASE STUDY DETAILS</p>
+                    <h1 class="reveal-scramble" style="font-size: clamp(3rem, 10vw, 6rem); font-weight:900; line-height:0.9; border-left:8px solid var(--accent-color); padding-left:40px;">CITYGRUB_UX<br>RESTRUCTURE</h1>
+                    
+                    <div style="display:flex; gap:50px; margin-top:60px; font-family:var(--font-mono);">
+                        <div><span style="color:var(--text-secondary); font-size:0.75rem;">[ CLIENT ]</span><br><span style="color:#fff; font-size:1.3rem; font-weight:700;">CityGrub</span></div>
+                        <div><span style="color:var(--text-secondary); font-size:0.75rem;">[ TIMELINE ]</span><br><span style="color:#fff; font-size:1.3rem; font-weight:700;">Q1 2026</span></div>
+                        <div><span style="color:var(--text-secondary); font-size:0.75rem;">[ ROLE ]</span><br><span style="color:#fff; font-size:1.3rem; font-weight:700;">Web Architect</span></div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- 2.0 Operational Analysis -->
+            <section class="section" style="padding:15vh 5vw; background:#080808;">
+                <div style="max-width:1400px; margin:0 auto; display:grid; grid-template-columns:1fr 1.5fr; gap:100px; align-items:center;">
+                    <div>
+                        <h3 style="font-size:2.5rem; font-weight:900; margin-bottom:30px;">THE TECHNICAL<br>BLUEPRINT</h3>
+                        <p style="font-size:1.1rem; color:var(--text-secondary); line-height:1.7; margin-bottom:30px;">
+                            CityGrub required a total decommissioning of their legacy framework. We implemented a decentralized state management protocol and a custom WebGL canvas for real-time delivery tracking across 12 territories.
+                        </p>
+                        <div style="display:flex; flex-direction:column; gap:15px; font-family:var(--font-mono); font-size:0.8rem; color:var(--accent-color);">
+                            <span>> RSC Core Integration</span>
+                            <span>> Sub-10ms Latency Grid</span>
+                            <span>> AES-256 Payload Encryption</span>
+                        </div>
+                    </div>
+                    <div class="tilt-card" style="position:relative; border-radius:12px; overflow:hidden; border:1px solid var(--border-color); height:500px; background:rgba(255,255,255,0.01);">
+                        <img src="assets/project-02.jpg" style="width:100%; height:100%; object-fit:cover; opacity:0.6;">
+                        <div style="position:absolute; bottom:40px; left:40px; z-index:2;">
+                             <p style="font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-color);">[ ASSET_01 // CORE_INTERFACE ]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3.0 Performance Benchmark -->
+            <section class="section" style="padding:15vh 5vw; border-top:1px solid var(--border-color); background:var(--bg-color);">
+                <div style="max-width:1400px; margin:0 auto; text-align:center;">
+                    <h3 style="font-size:3rem; font-weight:900; margin-bottom:80px;">PROJECT METRICS</h3>
+                    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:40px;">
+                        <div style="padding:50px; background:rgba(0,229,255,0.02); border:1px solid rgba(0,229,255,0.1); border-radius:4px;">
+                            <h4 style="font-size:3.5rem; font-weight:900; color:var(--accent-color); margin-bottom:15px;">-45%</h4>
+                            <p style="font-family:var(--font-mono); font-size:0.8rem; color:var(--text-secondary); letter-spacing:2px;">CONVERSION_LATENCY</p>
+                        </div>
+                        <div style="padding:50px; background:rgba(0,229,255,0.02); border:1px solid rgba(0,229,255,0.1); border-radius:4px;">
+                            <h4 style="font-size:3.5rem; font-weight:900; color:var(--accent-color); margin-bottom:15px;">+120%</h4>
+                            <p style="font-family:var(--font-mono); font-size:0.8rem; color:var(--text-secondary); letter-spacing:2px;">USER_RETENTION</p>
+                        </div>
+                        <div style="padding:50px; background:rgba(0,229,255,0.02); border:1px solid rgba(0,229,255,0.1); border-radius:4px;">
+                            <h4 style="font-size:3.5rem; font-weight:900; color:var(--accent-color); margin-bottom:15px;">0.1s</h4>
+                            <p style="font-family:var(--font-mono); font-size:0.8rem; color:var(--text-secondary); letter-spacing:2px;">SYSTEM PERFORMANCE</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Global Footer Injector -->
+            <div id="global-footer-container"></div>
+
+        </div>
+    </main>
+
+    <!-- 8.0 Nexus Oracle V2.1 (WhatsApp-Style Architecture) -->
+    <div id="nexus-oracle-glow"></div>
+    <div id="oracle-status-label"></div>
+    <div id="social-status-label"></div>
+    <div id="nexus-oracle-toggle" title="CONSULT_STRATEGIST">
+        <!-- Floating Brand Icon handled by CSS -->
+    </div>
+
+    <!-- Nexus Oracle V30: The 'Tony' Edition -->
+    <div id="nexus-oracle-container">
+        <div id="oracle-header">
+            <div class="oracle-title-group">
+                <img src="assets/NEXUS ORACLE.jpg" class="oracle-avatar" alt="Tony">
+                <div style="display:flex; flex-direction:column; line-height: 1.2;">
+                    <span style="font-weight:700; font-size:1.1rem;">Nexus</span>
+                    <span style="font-size:0.75rem; opacity:0.9;">Tustar Lead Strategist • Online</span>
+                </div>
+            </div>
+            <div id="oracle-close"><i class="fas fa-times"></i></div>
+        </div>
+        <div id="oracle-output">
+            <!-- Professional Introduction Message -->
+            <div class="oracle-msg AI">
+                Hello! I am Nexus, your Tustar Co. strategist. How can I help you today?
+            </div>
+        </div>
+        <form id="oracle-form">
+            <div id="oracle-input-area">
+                <input type="text" id="oracle-input" placeholder="Type your strategic query..." autocomplete="off">
+                <button type="submit" id="oracle-send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/gsap-animations.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/gemini.js"></script>
+</body>
+</html>

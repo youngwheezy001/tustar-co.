@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+.npm
+package-lock.json
+
+# Environment
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# OS/IDEs
+.DS_Store
+.vscode/
+.idea/
+*.log
+
+# Temp/Build
+dist/
+build/
+tmp/
+*.tmp

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Automated SEO & OpenGraph Integration -->
+    <meta name="description" content="Tustar Co. Engineering Suite - App & web architectures, VFX, and Drone Simulations.">
+    <title>Tustar Co. Agency | Services</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Tustar Co. UI Layers -->
+    <!-- V37 Premium Industrial Drone Preloader -->
+    <div id="cinematic-preloader">
+        <!-- Telemetry Background Stream -->
+        <div class="loader-telemetry" id="loader-telemetry"></div>
+        
+        <div class="loader-content">
+            <div class="logo-wrap">
+                <img src="assets/logo.jpg" class="loader-logo" alt="TUSTAR CO.">
+                <div class="scan-ring"></div>
+            </div>
+            
+            <div class="drone-orbit-system">
+                <div class="drone-path">
+                    <div class="industrial-drone">
+                        <svg viewBox="0 0 100 100" class="drone-svg">
+                            <!-- Industrial Drone Body -->
+                            <path d="M30 50 L70 50 L65 60 L35 60 Z" fill="var(--accent-color)" opacity="0.8"/>
+                            <rect x="45" y="45" width="10" height="15" fill="#fff" />
+                            <!-- Rotors -->
+                            <circle cx="30" cy="50" r="12" fill="none" stroke="var(--accent-color)" stroke-width="1" stroke-dasharray="4 2"/>
+                            <circle cx="70" cy="50" r="12" fill="none" stroke="var(--accent-color)" stroke-width="1" stroke-dasharray="4 2"/>
+                            <!-- Landing Gear -->
+                            <path d="M35 60 L30 70 M65 60 L70 70" stroke="var(--accent-color)" stroke-width="2"/>
+                            <!-- Lens/Camera -->
+                            <circle cx="50" cy="58" r="3" fill="#ff0000" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="loader-status-container">
+                <div class="loader-percentage">00%</div>
+                <div class="loader-label">INITIALIZING_ASSETS...</div>
+            </div>
+        </div>
+    </div>
+    <div id="transition-wipe"></div>
+    <div class="global-grain"></div>
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <div class="fps-counter" id="fps-counter">FPS: 00</div>
+    <div class="system-cursor" id="system-cursor"></div>
+
+    <nav id="navbar">
+        <a href="index.html" class="nav-brand" style="display:flex; align-items:center; gap:15px;"><img src="assets/logo.jpg" alt="TUSTAR CO." style="height:40px; width:auto; border-radius:3px; box-shadow: 0 0 10px rgba(0,255,49,0.2);"> TUSTAR CO.</a>
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="services.html" class="active">SERVICES</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div class="nav-status" style="font-family:var(--font-mono); font-size:0.75rem;">
+            <span class="lang-toggle" data-lang="en" style="cursor:pointer; color:var(--accent-color); transition:color 0.2s;">EN</span> <span style="color:var(--text-secondary);">|</span> <span class="lang-toggle" data-lang="fr" style="cursor:pointer; color:var(--text-primary); transition:color 0.2s;">FR</span>
+        </div>
+    </nav>
+
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+            
+            <!-- 1.0 Refined Hero Header -->
+            <header class="section hq-section" style="padding-top:20vh; min-height:60vh; position:relative; overflow:hidden; text-align:left; padding-left:5vw;">
+                 <div class="hero-mask"></div>
+                 <div class="asset-placeholder" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:0;">
+                    <img src="assets/athree23-microsoft-3671640_1920.jpg" alt="Services Hero" class="cinematic-img">
+                </div>
+                <div style="position:relative; z-index:2;">
+                    <h1 class="hq-header">OUR<br>SERVICES</h1>
+                    <p style="max-width:550px; color:var(--text-secondary); line-height:1.6; font-size:1.05rem;">A full-spectrum technical matrix covering web architectures, cinematic VFX, and hardware simulation protocols.</p>
+                </div>
+            </header>
+
+            <!-- 2.0 Phase 01: Service Matrix (6-Module Grid) -->
+            <section class="section" style="padding: 15vh 5vw; background:var(--bg-color); position:relative; z-index:2;">
+                <div style="max-width:1400px; margin:0 auto;">
+                    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:80px; border-bottom:1px solid var(--border-color); padding-bottom:30px;">
+                        <h2 style="font-size:2.5rem; font-weight:900;">SERVICE SPECTRUM</h2>
+                        <p style="font-family:var(--font-mono); color:var(--text-secondary); font-size:0.8rem;">FULL_ACCESS CAPABILITIES</p>
+                    </div>
+
+                    <div class="services-2col">
+                        
+                        <!-- 01: Web Development -->
+                        <div class="tilt-card project-card" style="padding:40px; background:rgba(255,255,255,0.01); border:1px solid var(--border-color); position:relative; overflow:hidden; min-height:500px;">
+                            <div class="hud-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(5,8,17,0.92); backdrop-filter:blur(12px); z-index:10; opacity:0; transition:opacity 0.4s; padding:50px; display:flex; flex-direction:column; justify-content:center; border:1px solid var(--accent-color);">
+                                <p style="font-family:var(--font-mono); color:var(--accent-color); font-size:0.75rem; margin-bottom:15px; letter-spacing:2px;">// PROTOCOL: WEB_DEV_ARCH</p>
+                                <h4 style="font-size:1.8rem; margin-bottom:25px; font-weight:900;">WEB SYSTEMS ARCHITECTURE</h4>
+                                <ul style="list-style:none; padding:0; color:var(--text-secondary); font-size:1rem; line-height:2;">
+                                    <li>> Full-Stack Next.js | TypeScript</li>
+                                    <li>> API & Microservice Integration</li>
+                                    <li>> Sub-second Performance Logic</li>
+                                    <li>> Global Edge Deployment</li>
+                                </ul>
+                                <div style="margin-top:30px; font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-color);">STATUS: ULTRA_STABLE</div>
+                            </div>
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:30px;">
+                                <p style="font-family:var(--font-mono); color:var(--accent-color); font-size:0.8rem; letter-spacing:1px;">01_WEB_ENGINEERING</p>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline><line x1="12" y1="2" x2="12" y2="22"></line></svg>
+                            </div>
+                            <h3 style="font-size:2.5rem; font-weight:900; line-height:1; margin-bottom:25px;">WEBSITE<br>DEVELOPMENT</h3>
+                            <p style="color:var(--text-secondary); line-height:1.7; font-size:1.1rem;">Precision coding for landing pages, e-commerce, and high-bandwidth corporate platforms.</p>
+                            <img src="assets/9.jpg" style="width:100%; height:250px; object-fit:cover; margin-top:40px; opacity:0.8; border-radius:4px; filter: grayscale(1) contrast(1.2);">
+                        </div>
+
+                        <!-- 02: Mobile App Development -->
+                        <div class="tilt-card project-card" style="padding:40px; background:rgba(255,255,255,0.01); border:1px solid var(--border-color); position:relative; overflow:hidden; min-height:500px;">
+                             <div class="hud-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(5,8,17,0.92); backdrop-filter:blur(12px); z-index:10; opacity:0; transition:opacity 0.4s; padding:50px; display:flex; flex-direction:column; justify-content:center; border:1px solid var(--accent-violet);">
+                                <p style="font-family:var(--font-mono); color:var(--accent-violet); font-size:0.75rem; margin-bottom:15px; letter-spacing:2px;">// PROTOCOL: MOBILE_OS_INIT</p>
+                                <h4 style="font-size:1.8rem; margin-bottom:25px; font-weight:900;">MOBILE ENGINEERING</h4>
+                                <ul style="list-style:none; padding:0; color:var(--text-secondary); font-size:1rem; line-height:2;">
+                                    <li>> iOS & Android Ecosystems</li>
+                                    <li>> Native Performant React Native</li>
+                                    <li>> Biometric Security Hubs</li>
+                                    <li>> Real-time Data Visualization</li>
+                                </ul>
+                                <div style="margin-top:30px; font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-violet);">STATUS: ACTIVE_NODE</div>
+                            </div>
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:30px;">
+                                <p style="font-family:var(--font-mono); color:var(--accent-violet); font-size:0.8rem; letter-spacing:1px;">02_MOBILE_OS</p>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-violet)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                            </div>
+                            <h3 style="font-size:2.5rem; font-weight:900; line-height:1; margin-bottom:25px;">MOBILE APP<br>DEVELOPMENT</h3>
+                            <p style="color:var(--text-secondary); line-height:1.7; font-size:1.1rem;">High-performance iOS and Android applications engineered for fluid user interaction.</p>
+                            <img src="assets/3.jpg" style="width:100%; height:250px; object-fit:cover; margin-top:40px; opacity:0.8; border-radius:4px; filter: grayscale(1) contrast(1.2);">
+                        </div>
+
+                        <!-- 03: Video Editing & VFX -->
+                        <div data-deep-dive="case-study.html" class="tilt-card project-card" style="padding:40px; background:rgba(255,255,255,0.01); border:1px solid var(--border-color); position:relative; overflow:hidden; min-height:500px;">
+                             <div class="hud-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(5,8,17,0.92); backdrop-filter:blur(12px); z-index:10; opacity:0; transition:opacity 0.4s; padding:50px; display:flex; flex-direction:column; justify-content:center; border:1px solid var(--accent-color);">
+                                <p style="font-family:var(--font-mono); color:var(--accent-color); font-size:0.75rem; margin-bottom:15px; letter-spacing:2px;">// PROTOCOL: VFX_RENDER_TIMELINE</p>
+                                <h4 style="font-size:1.8rem; margin-bottom:25px; font-weight:900;">POST-PRODUCTION HUD</h4>
+                                <ul style="list-style:none; padding:0; color:var(--text-secondary); font-size:1rem; line-height:2;">
+                                    <li>> 4K Cinematic Color Grading</li>
+                                    <li>> Kinetic Glitch Typography</li>
+                                    <li>> 3D Composite Motion</li>
+                                    <li>> Datamosh Brand Launches</li>
+                                </ul>
+                                <div style="margin-top:30px; font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-color);">STATUS: TIMELINE_OPTIMIZED</div>
+                            </div>
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:30px;">
+                                <p style="font-family:var(--font-mono); color:var(--accent-color); font-size:0.8rem; letter-spacing:1px;">03_POST_PRODUCTION</p>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
+                            </div>
+                            <h3 style="font-size:2.5rem; font-weight:900; line-height:1; margin-bottom:25px;">VIDEO EDITING<br>& VFX</h3>
+                            <p style="color:var(--text-secondary); line-height:1.7; font-size:1.1rem;">Aggressive kinetic visuals designed to dominate the timeline and capture immediate attention.</p>
+                            <img src="assets/2.jpg" style="width:100%; height:250px; object-fit:cover; margin-top:40px; opacity:0.8; border-radius:4px; filter: grayscale(1) contrast(1.2);">
+                        </div>
+
+                        <!-- 04: Graphics Design Engine -->
+                        <div data-deep-dive="case-study.html" class="tilt-card project-card" style="padding:40px; background:rgba(255,255,255,0.01); border:1px solid var(--border-color); position:relative; overflow:hidden; min-height:500px;">
+                             <div class="hud-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(5,8,17,0.92); backdrop-filter:blur(12px); z-index:10; opacity:0; transition:opacity 0.4s; padding:50px; display:flex; flex-direction:column; justify-content:center; border:1px solid var(--accent-violet);">
+                                <p style="font-family:var(--font-mono); color:var(--accent-violet); font-size:0.75rem; margin-bottom:15px; letter-spacing:2px;">// PROTOCOL: GRAPH_CORE_DRAW</p>
+                                <h4 style="font-size:1.8rem; margin-bottom:25px; font-weight:900;">GRAPHICS ENGINE</h4>
+                                <ul style="list-style:none; padding:0; color:var(--text-secondary); font-size:1rem; line-height:2;">
+                                    <li>> Master Brand Identity</li>
+                                    <li>> Tactical UI/UX Design</li>
+                                    <li>> Vector System Mapping</li>
+                                    <li>> 3D Iconography</li>
+                                </ul>
+                                <div style="margin-top:30px; font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-violet);">STATUS: VISUAL_STABLE</div>
+                            </div>
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:30px;">
+                                <p style="font-family:var(--font-mono); color:var(--accent-violet); font-size:0.8rem; letter-spacing:1px;">04_BRAND_IDENTITY</p>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-violet)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                            </div>
+                            <h3 style="font-size:2.5rem; font-weight:900; line-height:1; margin-bottom:25px;">GRAPHICS<br>DESIGN</h3>
+                            <p style="color:var(--text-secondary); line-height:1.7; font-size:1.1rem;">High-end digital branding and military-grade UI design that communicates authority.</p>
+                            <img src="assets/4.jpg" style="width:100%; height:250px; object-fit:cover; margin-top:40px; opacity:0.8; border-radius:4px; filter: grayscale(1) contrast(1.2);">
+                        </div>
+
+                        <!-- 05: Physical Logic (CAD/Drone) -->
+                        <div data-deep-dive="case-study.html" class="tilt-card project-card" style="padding:40px; background:rgba(255,255,255,0.01); border:1px solid var(--border-color); position:relative; overflow:hidden; min-height:500px;">
+                             <div class="hud-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(5,8,17,0.92); backdrop-filter:blur(12px); z-index:10; opacity:0; transition:opacity 0.4s; padding:50px; display:flex; flex-direction:column; justify-content:center; border:1px solid var(--accent-color);">
+                                <p style="font-family:var(--font-mono); color:var(--accent-color); font-size:0.75rem; margin-bottom:15px; letter-spacing:2px;">// PROTOCOL: SIM_CAD_FLIGHT</p>
+                                <h4 style="font-size:1.8rem; margin-bottom:25px; font-weight:900;">HARDWARE SIMULATION</h4>
+                                <ul style="list-style:none; padding:0; color:var(--text-secondary); font-size:1rem; line-height:2;">
+                                    <li>> SolidWorks PCB Drafting</li>
+                                    <li>> eVTOL Mechanics Mapping</li>
+                                    <li>> Carbon-Fiber Chassis Simulation</li>
+                                    <li>> Aerodynamic Load Analysis</li>
+                                </ul>
+                                <div style="margin-top:30px; font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-color);">STATUS: MISSION_SYNC</div>
+                            </div>
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:30px;">
+                                <p style="font-family:var(--font-mono); color:var(--accent-color); font-size:0.8rem; letter-spacing:1px;">05_PHYSICAL_ENGINEERING</p>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            </div>
+                            <h3 style="font-size:2.5rem; font-weight:900; line-height:1; margin-bottom:25px;">DRONE & CAD<br>SIMULATION</h3>
+                            <p style="color:var(--text-secondary); line-height:1.7; font-size:1.1rem;">Precision-grade physical engineering drafting the hardware assets of the future.</p>
+                            <img src="assets/7.jpg" style="width:100%; height:250px; object-fit:cover; margin-top:40px; opacity:0.8; border-radius:4px; filter: grayscale(1) contrast(1.2);">
+                        </div>
+
+                         <!-- 06: Digital Growth & Strategy -->
+                         <div data-deep-dive="case-study.html" class="tilt-card project-card" style="padding:40px; background:rgba(255,255,255,0.01); border:1px solid var(--border-color); position:relative; overflow:hidden; min-height:500px;">
+                             <div class="hud-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(5,8,17,0.92); backdrop-filter:blur(12px); z-index:10; opacity:0; transition:opacity 0.4s; padding:50px; display:flex; flex-direction:column; justify-content:center; border:1px solid var(--accent-violet);">
+                                <p style="font-family:var(--font-mono); color:var(--accent-violet); font-size:0.75rem; margin-bottom:15px; letter-spacing:2px;">// PROTOCOL: GROWTH_MARKET_OPS</p>
+                                <h4 style="font-size:1.8rem; margin-bottom:25px; font-weight:900;">STRATEGIC GROWTH</h4>
+                                <ul style="list-style:none; padding:0; color:var(--text-secondary); font-size:1rem; line-height:2;">
+                                    <li>> Market Dominance Logic</li>
+                                    <li>> Conversion Rate Optimization</li>
+                                    <li>> Hyper-Targeted Ad Systems</li>
+                                    <li>> Strategic Brand Auditing</li>
+                                </ul>
+                                <div style="margin-top:30px; font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-violet);">STATUS: OPTIMIZED</div>
+                            </div>
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:30px;">
+                                <p style="font-family:var(--font-mono); color:var(--accent-violet); font-size:0.8rem; letter-spacing:1px;">06_DIGITAL_STRATEGY</p>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-violet)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path></svg>
+                            </div>
+                            <h3 style="font-size:2.5rem; font-weight:900; line-height:1; margin-bottom:25px;">ANY OTHER<br>DIGITAL SERVICE</h3>
+                            <p style="color:var(--text-secondary); line-height:1.7; font-size:1.1rem;">If it can be engineered in the digital realm, Tustar Co. dominates the operational deployment.</p>
+                            <img src="assets/1.jpg" style="width:100%; height:250px; object-fit:cover; margin-top:40px; opacity:0.8; border-radius:4px; filter: grayscale(1) contrast(1.2);">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3.0 NEW: Strategic Sectors Matrix -->
+            <section class="section" style="padding: 15vh 5vw; background:#080808; border-top:1px solid var(--border-color);">
+                <div style="max-width:1400px; margin:0 auto;">
+                    <p style="font-family:var(--font-mono); color:var(--accent-color); margin-bottom:20px; letter-spacing:5px; text-align:center;">// STRATEGIC SECTORS</p>
+                    <h2 style="font-size:4rem; font-weight:900; margin-bottom:80px; text-align:center;">OPERATIONAL VERTICALS</h2>
+                    
+                    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:40px;">
+                        <!-- Sector 1 -->
+                        <div class="tilt-card" style="padding:40px; background:rgba(255,255,255,0.02); border:1px solid var(--border-color); text-align:left;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:30px;">
+                                <h4 style="font-size:1.5rem;">FinTech & Web3</h4>
+                                <span style="font-family:var(--font-mono); font-size:0.6rem; color:var(--accent-color); border:1px solid var(--accent-color); padding:2px 6px;">SECURE</span>
+                            </div>
+                            <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.6; margin-bottom:30px;">High-bandwidth dashboards plotting live market data with zero latency.</p>
+                            <div style="height:1px; width:100%; background:var(--border-color); margin-bottom:20px;"></div>
+                            <p style="font-family:var(--font-mono); font-size:0.7rem; color:var(--accent-color);">PROTOCOL: TRADING_VIEW_SYNC</p>
+                        </div>
+                        <!-- Sector 2 -->
+                        <div class="tilt-card" style="padding:40px; background:rgba(255,255,255,0.02); border:1px solid var(--border-color); text-align:left;">
+                             <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:30px;">
+                                <h4 style="font-size:1.5rem;">Aerospace</h4>
+                                <span style="font-family:var(--font-mono); font-size:0.6rem; color:var(--accent-violet); border:1px solid var(--accent-violet); padding:2px 6px;">SENSITIVE</span>
+                            </div>
+                            <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.6; margin-bottom:30px;">Proprietary tracking interfaces and fluid WebGL simulations for hardware vendors.</p>
+                            <div style="height:1px; width:100%; background:var(--border-color); margin-bottom:20px;"></div>
+                            <p style="font-family:var(--font-mono); font-size:0.7rem; color:var(--accent-violet);">PROTOCOL: HARDWARE_INTERFACE</p>
+                        </div>
+                        <!-- Sector 3 -->
+                        <div class="tilt-card" style="padding:40px; background:rgba(255,255,255,0.02); border:1px solid var(--border-color); text-align:left;">
+                             <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:30px;">
+                                <h4 style="font-size:1.5rem;">E-Commerce</h4>
+                                <span style="font-family:var(--font-mono); font-size:0.6rem; color:var(--accent-color); border:1px solid var(--accent-color); padding:2px 6px;">SCALABLE</span>
+                            </div>
+                            <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.6; margin-bottom:30px;">Conversion-maximized storefronts leveraging advanced cache logic for sub-second Checkouts.</p>
+                            <div style="height:1px; width:100%; background:var(--border-color); margin-bottom:20px;"></div>
+                            <p style="font-family:var(--font-mono); font-size:0.7rem; color:var(--accent-color);">PROTOCOL: GLOBAL_SCALE</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7.0 Universal CTA -->
+            <section class="universal-cta">
+                <div class="universal-cta-inner">
+                    <p class="cta-tag">// INITIATE_MISSION</p>
+                    <h2 class="cta-title">Ready to architect your<br>digital dominance?</h2>
+                    <a href="contact.html" class="dynamic-magnetic-btn button" style="padding:22px 50px; font-size:1.1rem; display:inline-block; border:1px solid var(--accent-color); color:var(--accent-color); text-decoration:none;">[ ESTABLISH_SECURE_LINK ]</a>
+                </div>
+            </section>
+
+            <!-- Global Footer Injector -->
+            <div id="global-footer-container"></div>
+
+        </div>
+    </main>
+
+    <!-- 8.0 Nexus Oracle V2.1 (WhatsApp-Style Architecture) -->
+    <div id="nexus-oracle-glow"></div>
+    <div id="oracle-status-label"></div>
+    <div id="social-status-label"></div>
+    <div id="nexus-oracle-toggle" title="CONSULT_STRATEGIST">
+        <!-- Floating Brand Icon handled by CSS -->
+    </div>
+
+    <!-- Nexus Oracle V30: The 'Tony' Edition -->
+    <div id="nexus-oracle-container">
+        <div id="oracle-header">
+            <div class="oracle-title-group">
+                <img src="assets/NEXUS ORACLE.jpg" class="oracle-avatar" alt="Tony">
+                <div style="display:flex; flex-direction:column; line-height: 1.2;">
+                    <span style="font-weight:700; font-size:1.1rem;">Nexus</span>
+                    <span style="font-size:0.75rem; opacity:0.9;">Tustar Lead Strategist • Online</span>
+                </div>
+            </div>
+            <div id="oracle-close"><i class="fas fa-times"></i></div>
+        </div>
+        <div id="oracle-output">
+            <!-- Professional Introduction Message -->
+            <div class="oracle-msg AI">
+                Hello! I am Nexus, your Tustar Co. strategist. How can I help you today?
+            </div>
+        </div>
+        <form id="oracle-form">
+            <div id="oracle-input-area">
+                <input type="text" id="oracle-input" placeholder="Type your strategic query..." autocomplete="off">
+                <button type="submit" id="oracle-send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/gsap-animations.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/gemini.js"></script>
+</body>
+</html>

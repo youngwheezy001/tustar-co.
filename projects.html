@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tustar Co. The Archives - A verified log of our high-end deployments.">
+    <title>Tustar Co. Agency | The Archives</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Tustar Co. UI Layers -->
+    <!-- V37 Premium Industrial Drone Preloader -->
+    <div id="cinematic-preloader">
+        <!-- Telemetry Background Stream -->
+        <div class="loader-telemetry" id="loader-telemetry"></div>
+        
+        <div class="loader-content">
+            <div class="logo-wrap">
+                <img src="assets/logo.jpg" class="loader-logo" alt="TUSTAR CO.">
+                <div class="scan-ring"></div>
+            </div>
+            
+            <div class="drone-orbit-system">
+                <div class="drone-path">
+                    <div class="industrial-drone">
+                        <svg viewBox="0 0 100 100" class="drone-svg">
+                            <!-- Industrial Drone Body -->
+                            <path d="M30 50 L70 50 L65 60 L35 60 Z" fill="var(--accent-color)" opacity="0.8"/>
+                            <rect x="45" y="45" width="10" height="15" fill="#fff" />
+                            <!-- Rotors -->
+                            <circle cx="30" cy="50" r="12" fill="none" stroke="var(--accent-color)" stroke-width="1" stroke-dasharray="4 2"/>
+                            <circle cx="70" cy="50" r="12" fill="none" stroke="var(--accent-color)" stroke-width="1" stroke-dasharray="4 2"/>
+                            <!-- Landing Gear -->
+                            <path d="M35 60 L30 70 M65 60 L70 70" stroke="var(--accent-color)" stroke-width="2"/>
+                            <!-- Lens/Camera -->
+                            <circle cx="50" cy="58" r="3" fill="#ff0000" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="loader-status-container">
+                <div class="loader-percentage">00%</div>
+                <div class="loader-label">INITIALIZING_ASSETS...</div>
+            </div>
+        </div>
+    </div>
+    <div id="transition-wipe"></div>
+    <div class="global-grain"></div>
+    <div class="scroll-progress" id="scroll-progress"></div>
+    <div class="fps-counter" id="fps-counter">FPS: 00</div>
+    <div class="system-cursor" id="system-cursor"></div>
+
+    <nav id="navbar">
+        <a href="index.html" class="nav-brand" style="display:flex; align-items:center; gap:15px;"><img src="assets/logo.jpg" alt="TUSTAR CO." style="height:40px; width:auto; border-radius:3px; box-shadow: 0 0 10px rgba(0,255,49,0.2);"> TUSTAR CO.</a>
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="services.html">SERVICES</a>
+            <a href="projects.html" class="active">PROJECTS</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div class="nav-status" style="font-family:var(--font-mono); font-size:0.75rem;">
+            <span class="lang-toggle" data-lang="en" style="cursor:pointer; color:var(--accent-color); transition:color 0.2s;">EN</span> <span style="color:var(--text-secondary);">|</span> <span class="lang-toggle" data-lang="fr" style="cursor:pointer; color:var(--text-primary); transition:color 0.2s;">FR</span>
+        </div>
+    </nav>
+
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+            <!-- 1.0 V32 Anti-Gravity Hero (Projects Edition) -->
+            <header id="projects-hero" style="position:relative; height:500vh; padding:0; margin:0; display:block;">
+                <div class="hero-sticky-container" style="position:sticky; top:0; left:0; width:100%; height:100vh; overflow:hidden; z-index:1;">
+                    <canvas id="projects-sequence-canvas" class="projects-hero-canvas" style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:100%; height:100%; object-fit:cover; z-index:0;"></canvas>
+                    
+                    <!-- V33 Hero Header (Stage 0) -->
+                    <div class="hero-content hero-text-overlay" id="projects-main-title" style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center; z-index:2; width:100%; padding: 0 20px;">
+                        <p style="font-family:var(--font-mono); color:var(--accent-color); margin-bottom:15px; letter-spacing:4px; text-transform:uppercase;">// WORK PORTFOLIO</p>
+                        <h1 style="font-size: clamp(2rem, 5vw, 4.5rem); line-height:0.9; font-weight:900; letter-spacing:-1.5px; color:var(--text-primary);">VERIFIED <br> <span class="highlight-cyan" style="color:var(--accent-color);">DEPLOYMENTS</span></h1>
+                    </div>
+
+                    <!-- 4 TEXT SHOT PHASES (V33 High-Fidelity) -->
+                    <div class="anti-gravity-stage" id="projects-stage-1" style="position:absolute; top:0; left:0; width:100%; height:100vh; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none;">
+                        <div class="anti-gravity-text">
+                            <p style="font-family:var(--font-mono); color:var(--accent-color); margin-bottom:10px; letter-spacing:2px;">[ TEXT 1 ]</p>
+                            <h1 style="color:var(--text-primary);">DIGITAL <br> <span class="highlight-cyan" style="color:var(--accent-color);">BLUEPRINTING.</span></h1>
+                            <p style="color:var(--text-secondary); margin-top:15px; font-size:0.9rem; font-family:var(--font-mono);">// HIGH-VISCOSITY_FRAMEWORKS_RECON //</p>
+                        </div>
+                    </div>
+
+                    <div class="anti-gravity-stage" id="projects-stage-2" style="position:absolute; top:0; left:0; width:100%; height:100vh; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none;">
+                        <div class="anti-gravity-text">
+                            <p style="font-family:var(--font-mono); color:var(--accent-color); margin-bottom:10px; letter-spacing:2px;">[ TEXT 2 ]</p>
+                            <h1 style="color:var(--text-primary);">STRUCTURAL <br> <span class="highlight-cyan" style="color:var(--accent-color);">DEPTH.</span></h1>
+                            <p style="color:var(--text-secondary); margin-top:15px; font-size:0.9rem; font-family:var(--font-mono);">// ETHEREAL_SYSTEMS_EXTRACTION //</p>
+                        </div>
+                    </div>
+
+                    <div class="anti-gravity-stage" id="projects-stage-3" style="position:absolute; top:0; left:0; width:100%; height:100vh; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none;">
+                        <div class="anti-gravity-text">
+                            <p style="font-family:var(--font-mono); color:var(--accent-color); margin-bottom:10px; letter-spacing:2px;">[ TEXT 3 ]</p>
+                            <h1 style="color:var(--text-primary);">PRECISION <br> <span class="highlight-cyan" style="color:var(--accent-color);">DEPLOYMENT.</span></h1>
+                            <p style="color:var(--text-secondary); margin-top:15px; font-size:0.9rem; font-family:var(--font-mono);">// SYSTEMIC_SYNERGY_OPTIMIZED //</p>
+                        </div>
+                    </div>
+
+                    <div class="anti-gravity-stage" id="projects-stage-4" style="position:absolute; top:0; left:0; width:100%; height:100vh; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none;">
+                        <div class="anti-gravity-text">
+                            <p style="font-family:var(--font-mono); color:var(--accent-color); margin-bottom:10px; letter-spacing:2px;">[ TEXT 4 ]</p>
+                            <h1 style="color:var(--text-primary);">LEGACY <br> <span class="highlight-cyan" style="color:var(--accent-color);">ARCHIVES.</span></h1>
+                            <p style="color:var(--text-secondary); margin-top:15px; font-size:0.9rem; font-family:var(--font-mono);">// THE_TUSTAR_STANDARD_VERIFIED //</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="section" style="padding-top:0; position:relative; display:flex; gap:60px; padding: 0 5vw 15vh;">
+                <!-- Command Sidebar Terminal -->
+                <aside class="archive-sidebar" style="width:280px; flex-shrink:0; position:sticky; top:120px; height:max-content; border-right:1px solid var(--border-color); padding-right:40px; display:block;">
+                    <div style="margin-bottom:40px;">
+                        <p style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-secondary); margin-bottom:10px;">// FILTER_SYSTEM</p>
+                        <div class="filter-system" style="flex-direction:column; align-items:flex-start; gap:10px; display:flex;">
+                            <button class="filter-btn active" data-filter="all" style="width:100%; text-align:left;">[ SHOW_ALL ]</button>
+                            <button class="filter-btn" data-filter="apps" style="width:100%; text-align:left;">[ WEB_APPS ]</button>
+                            <button class="filter-btn" data-filter="vfx" style="width:100%; text-align:left;">[ VFX_CORE ]</button>
+                            <button class="filter-btn" data-filter="hardware" style="width:100%; text-align:left;">[ SYSTEMS ]</button>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-status-box" style="padding:20px; background:rgba(0,229,255,0.02); border:1px solid rgba(0,229,255,0.1); border-radius:4px;">
+                        <p style="font-family:var(--font-mono); font-size:0.7rem; color:var(--accent-color); margin-bottom:5px;">// STATUS: ENCRYPTED</p>
+                        <p style="font-size:0.75rem; color:var(--text-secondary); line-height:1.4;">Historical data for Kenyas top high-tech industries. Verified and benchmarked.</p>
+                    </div>
+                </aside>
+
+                <div class="massive-grid masonry-matrix" style="flex:1; display:grid; grid-template-columns:repeat(auto-fill, minmax(380px, 1fr)); grid-auto-rows:200px; gap:30px;">
+                    <!-- Project 1 (Tall) -->
+                    <a href="case-study.html" class="tilt-card project-card" data-category="apps" style="grid-row: span 3; border:none; text-decoration:none; display:block; position:relative; overflow:hidden;">
+                        <div class="asset-placeholder project-placeholder" style="border-radius:8px; overflow:hidden; position:absolute; top:0; left:0; width:100%; height:100%; z-index:0;">
+                            <img src="assets/project-01.jpg" alt="Project 1" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; z-index:0; opacity:0.8;">
+                            <div class="hud-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(5,8,17,0.9); backdrop-filter:blur(10px); z-index:10; opacity:0; transition:opacity 0.3s; padding:40px; display:flex; flex-direction:column; justify-content:center; border:1px solid var(--accent-color);">
+                                <p style="font-family:var(--font-mono); color:var(--accent-color); font-size:0.8rem; margin-bottom:15px;">// HUD_01_NAV_KENYA</p>
+                                <h4 style="font-size:1.8rem; margin-bottom:20px; font-weight:900;">CityGrub UX Restructure</h4>
+                                <div style="border-top:1px solid var(--border-color); padding-top:20px;">
+                                    <p style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-secondary); margin-bottom:5px;">// STATUS: DEPLOYED</p>
+                                    <p style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-secondary); margin-bottom:5px;">// STACK: REACT / GSAP</p>
+                                    <p style="font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-color);">// KPI: +240% USER RETENTION</p>
+                                </div>
+                            </div>
+                            <div class="placeholder-label" style="position:relative; z-index:2; bottom:20px; left:20px;">PROJECT_ARCHIVE_01</div>
+                        </div>
+                    </a>
+
+                    <!-- Project 2 (Wide/Short) -->
+                    <a href="case-study.html" class="tilt-card project-card" data-category="vfx" style="grid-row: span 2; border:none; text-decoration:none; display:block; position:relative; overflow:hidden;">
+                         <div class="asset-placeholder project-placeholder" style="border-radius:8px; overflow:hidden; position:absolute; top:0; left:0; width:100%; height:100%; z-index:0;">
+                            <img src="assets/project-02.jpg" alt="Project 2" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; z-index:0; opacity:0.8;">
+                             <div class="hud-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(5,8,17,0.9); backdrop-filter:blur(10px); z-index:10; opacity:0; transition:opacity 0.3s; padding:40px; display:flex; flex-direction:column; justify-content:center; border:1px solid var(--accent-violet);">
+                                <p style="font-family:var(--font-mono); color:var(--accent-violet); font-size:0.8rem; margin-bottom:15px;">// HUD_02_MOMBASA_VFX</p>
+                                <h4 style="font-size:1.8rem; margin-bottom:20px; font-weight:900;">Scattpack VFX Launch</h4>
+                                <div style="border-top:1px solid var(--border-color); padding-top:20px;">
+                                    <p style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-secondary); margin-bottom:5px;">// STATUS: FINALIZED</p>
+                                    <p style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-secondary); margin-bottom:5px;">// STACK: AE / CINEMA4D</p>
+                                    <p style="font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-violet);">// KPI: 15M+ VIEW COUNT</p>
+                                </div>
+                            </div>
+                            <div class="placeholder-label" style="position:relative; z-index:2; bottom:20px; left:20px;">PROJECT_ARCHIVE_02</div>
+                        </div>
+                    </a>
+
+                    <!-- Project 3 (Standard) -->
+                    <a href="case-study.html" class="tilt-card project-card" data-category="apps" style="grid-row: span 3; border:none; text-decoration:none; display:block; position:relative; overflow:hidden;">
+                        <div class="asset-placeholder project-placeholder" style="border-radius:8px; overflow:hidden; position:absolute; top:0; left:0; width:100%; height:100%; z-index:0;">
+                            <img src="assets/project-03.jpg" alt="Project 3" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; z-index:0; opacity:0.8;">
+                             <div class="hud-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(5,8,17,0.9); backdrop-filter:blur(10px); z-index:10; opacity:0; transition:opacity 0.3s; padding:40px; display:flex; flex-direction:column; justify-content:center; border:1px solid var(--accent-color);">
+                                <p style="font-family:var(--font-mono); color:var(--accent-color); font-size:0.8rem; margin-bottom:15px;">// HUD_03_KISUMU_HUB</p>
+                                <h4 style="font-size:1.8rem; margin-bottom:20px; font-weight:900;">Premium-Lite UI</h4>
+                                <div style="border-top:1px solid var(--border-color); padding-top:20px;">
+                                    <p style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-secondary); margin-bottom:5px;">// STATUS: LIVE</p>
+                                    <p style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-secondary); margin-bottom:5px;">// STACK: NEXT.JS / AWS</p>
+                                    <p style="font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-color);">// KPI: 99.9% AVAILABILITY</p>
+                                </div>
+                            </div>
+                            <div class="placeholder-label" style="position:relative; z-index:2; bottom:20px; left:20px;">PROJECT_ARCHIVE_03</div>
+                        </div>
+                    </a>
+
+                    <!-- Project 4 (Standard) -->
+                    <a href="case-study.html" class="tilt-card project-card" data-category="hardware" style="grid-row: span 2; border:none; text-decoration:none; display:block; position:relative; overflow:hidden;">
+                        <div class="asset-placeholder project-placeholder" style="border-radius:8px; overflow:hidden; position:absolute; top:0; left:0; width:100%; height:100%; z-index:0;">
+                            <img src="assets/project-04.jpg" alt="Project 4" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; z-index:0; opacity:0.8;">
+                             <div class="hud-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(5,8,17,0.9); backdrop-filter:blur(10px); z-index:10; opacity:0; transition:opacity 0.3s; padding:40px; display:flex; flex-direction:column; justify-content:center; border:1px solid var(--accent-violet);">
+                                <p style="font-family:var(--font-mono); color:var(--accent-violet); font-size:0.8rem; margin-bottom:15px;">// HUD_04_NAIROBI_SIM</p>
+                                <h4 style="font-size:1.8rem; margin-bottom:20px; font-weight:900;">eVTOL Sim Environment</h4>
+                                <div style="border-top:1px solid var(--border-color); padding-top:20px;">
+                                    <p style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-secondary); margin-bottom:5px;">// STATUS: PROTOTYPE</p>
+                                    <p style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-secondary); margin-bottom:5px;">// STACK: SOLIDWORKS / WEBGL</p>
+                                    <p style="font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-violet);">// KPI: sub-10ms LATENCY</p>
+                                </div>
+                            </div>
+                            <div class="placeholder-label" style="position:relative; z-index:2; bottom:20px; left:20px;">PROJECT_ARCHIVE_04</div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 3.0 Universal CTA -->
+            <section class="universal-cta">
+                <div class="universal-cta-inner">
+                    <p class="cta-tag">// INITIATE_MISSION</p>
+                    <h2 class="cta-title">Ready to architect your<br>digital dominance?</h2>
+                    <a href="contact.html" class="dynamic-magnetic-btn button" style="padding:22px 50px; font-size:1.1rem; display:inline-block; border:1px solid var(--accent-color); color:var(--accent-color); text-decoration:none;">[ ESTABLISH_SECURE_LINK ]</a>
+                </div>
+            </section>
+
+            <!-- Global Footer Injector -->
+            <div id="global-footer-container"></div>
+        </div>
+    </main>
+    <!-- 8.0 Nexus Oracle V2.1 (WhatsApp-Style Architecture) -->
+    <div id="nexus-oracle-glow"></div>
+    <div id="oracle-status-label"></div>
+    <div id="social-status-label"></div>
+    <div id="nexus-oracle-toggle" title="CONSULT_STRATEGIST">
+        <!-- Floating Brand Icon handled by CSS -->
+    </div>
+
+    <!-- Nexus Oracle V30: The 'Tony' Edition -->
+    <div id="nexus-oracle-container">
+        <div id="oracle-header">
+            <div class="oracle-title-group">
+                <img src="assets/NEXUS ORACLE.jpg" class="oracle-avatar" alt="Tony">
+                <div style="display:flex; flex-direction:column; line-height: 1.2;">
+                    <span style="font-weight:700; font-size:1.1rem;">Nexus</span>
+                    <span style="font-size:0.75rem; opacity:0.9;">Tustar Lead Strategist • Online</span>
+                </div>
+            </div>
+            <div id="oracle-close"><i class="fas fa-times"></i></div>
+        </div>
+        <div id="oracle-output">
+            <!-- Professional Introduction Message -->
+            <div class="oracle-msg AI">
+                Hello! I am Nexus, your Tustar Co. strategist. How can I help you today?
+            </div>
+        </div>
+        <form id="oracle-form">
+            <div id="oracle-input-area">
+                <input type="text" id="oracle-input" placeholder="Type your strategic query..." autocomplete="off">
+                <button type="submit" id="oracle-send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/gsap-animations.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/gemini.js"></script>
+</body>
+</html>

@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Automated SEO & OpenGraph Integration -->
+    <meta name="description" content="Tustar Co. - Engineering high-performance digital ecosystems.">
+    <meta property="og:title" content="Tustar Co. Agency | Home">
+    <meta property="og:description" content="Engineering the modern web, pixel by pixel.">
+    <meta property="og:image" content="https://tustarco.sys/assets/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Tustar Co. Agency | Home</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Tustar Co. UI Layers -->
+    <!-- V37 Premium Industrial Drone Preloader -->
+    <div id="cinematic-preloader">
+        <!-- Telemetry Background Stream -->
+        <div class="loader-telemetry" id="loader-telemetry"></div>
+        
+        <div class="loader-content">
+            <div class="logo-wrap">
+                <img src="assets/logo.jpg" class="loader-logo" alt="TUSTAR CO.">
+                <div class="scan-ring"></div>
+            </div>
+            
+            <div class="drone-orbit-system">
+                <div class="drone-path">
+                    <div class="industrial-drone">
+                        <svg viewBox="0 0 100 100" class="drone-svg">
+                            <!-- Industrial Drone Body -->
+                            <path d="M30 50 L70 50 L65 60 L35 60 Z" fill="var(--accent-color)" opacity="0.8"/>
+                            <rect x="45" y="45" width="10" height="15" fill="#fff" />
+                            <!-- Rotors -->
+                            <circle cx="30" cy="50" r="12" fill="none" stroke="var(--accent-color)" stroke-width="1" stroke-dasharray="4 2"/>
+                            <circle cx="70" cy="50" r="12" fill="none" stroke="var(--accent-color)" stroke-width="1" stroke-dasharray="4 2"/>
+                            <!-- Landing Gear -->
+                            <path d="M35 60 L30 70 M65 60 L70 70" stroke="var(--accent-color)" stroke-width="2"/>
+                            <!-- Lens/Camera -->
+                            <circle cx="50" cy="58" r="3" fill="#ff0000" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="loader-status-container">
+                <div class="loader-percentage">00%</div>
+                <div class="loader-label">INITIALIZING_ASSETS...</div>
+            </div>
+        </div>
+    </div>
+    <div id="transition-wipe"></div>
+    <div class="global-grain"></div>
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <div class="fps-counter" id="fps-counter">FPS: 00</div>
+    <div class="system-cursor" id="system-cursor"></div>
+
+    <nav id="navbar">
+        <a href="index.html" class="nav-brand" style="display:flex; align-items:center; gap:15px;"><img
+                src="assets/logo.jpg" alt="TUSTAR CO."
+                style="height:40px; width:auto; border-radius:3px; box-shadow: 0 0 10px rgba(0,229,255,0.2);"> TUSTAR
+            CO.</a>
+        <div class="nav-links">
+            <a href="index.html" class="active">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="services.html">SERVICES</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div class="nav-status" style="font-family:var(--font-mono); font-size:0.75rem;">
+            <span class="lang-toggle" data-lang="en"
+                style="cursor:pointer; color:var(--accent-color); transition:color 0.2s;">EN</span> <span
+                style="color:var(--text-secondary);">|</span> <span class="lang-toggle" data-lang="fr"
+                style="cursor:pointer; color:var(--text-primary); transition:color 0.2s;">FR</span>
+        </div>
+    </nav>
+
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- 1.1 Cinematic Canvas Hero (V32 Restoration Edition) -->
+            <header id="hero" class="section hero-fullscreen" style="position:relative; height:500vh; padding:0; margin:0; display:block;">
+                
+                <div class="hero-sticky-container" style="position:sticky; top:0; left:0; width:100%; height:100vh; overflow:hidden; z-index:1;">
+                     <!-- Image Sequence Canvas -->
+                     <canvas id="hero-sequence-canvas" style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:100%; height:100%; object-fit:cover; z-index:0;"></canvas>
+                     
+                     <!-- Original 'Tony' Scramble Hero (Start Point) -->
+                     <div class="hero-content hero-text-overlay" id="hero-main-title" style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center; z-index:2; width:100%; padding: 0 20px;">
+                        <h1 class="scramble-text" style="font-size: clamp(2rem, 5vw, 4.5rem); line-height:0.9; margin-bottom:35px; font-weight:900; letter-spacing:-1.5px;">ARCHITECTING THE <br><span style="background:var(--gradient-primary); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color: transparent; display: inline-block;">FUTURE</span></h1>
+                        
+                        <div style="margin-top:40px; display:flex; gap:20px; justify-content:center; align-items:center; width:100%; max-width:500px; margin-left:auto; margin-right:auto; pointer-events:auto;">
+                            <a href="contact.html" class="button button-primary" style="padding:15px 35px; font-size:0.9rem; pointer-events:auto; font-weight:900; border-radius:4px; letter-spacing:1px; flex:1; text-align:center;">[ START PROJECT ]</a>
+                            <a href="projects.html" class="button" style="padding:15px 35px; font-size:0.9rem; pointer-events:auto; border:1px solid var(--accent-color); color:var(--text-primary); text-decoration:none; border-radius:4px; letter-spacing:1px; flex:1; text-align:center;">[ EXPLORE ]</a>
+                        </div>
+                     </div>
+
+                     <!-- Anti-Gravity Text Stages (V32 Phase Scrub) -->
+                     <div class="anti-gravity-stage" id="stage-1" style="position:absolute; top:0; left:0; width:100%; height:100vh; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none;">
+                        <div class="anti-gravity-text">
+                            <h1 style="color:var(--text-primary);">ENGINEERING <br> <span class="highlight-cyan" style="color:var(--accent-color);">DIGITAL EXCELLENCE.</span></h1>
+                        </div>
+                     </div>
+
+                     <div class="anti-gravity-stage" id="stage-2" style="position:absolute; top:0; left:0; width:100%; height:100vh; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none;">
+                        <div class="anti-gravity-text">
+                            <h1 style="color:var(--text-primary);">ADAPTIVE <br> <span class="highlight-cyan" style="color:var(--accent-color);">INFRASTRUCTURE.</span></h1>
+                        </div>
+                     </div>
+
+                     <div class="anti-gravity-stage" id="stage-3" style="position:absolute; top:0; left:0; width:100%; height:100vh; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none;">
+                        <div class="anti-gravity-text">
+                            <h1 style="color:var(--text-primary);">CINEMATIC <br> <span class="highlight-cyan" style="color:var(--accent-color);">DISRUPTION.</span></h1>
+                        </div>
+                     </div>
+
+                     <div class="anti-gravity-stage" id="stage-4" style="position:absolute; top:0; left:0; width:100%; height:100vh; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none;">
+                        <div class="anti-gravity-text">
+                            <h1 style="color:var(--text-primary);">THE TUSTAR <br> <span class="highlight-cyan" style="color:var(--accent-color);">PROTOCOL.</span></h1>
+                        </div>
+                     </div>
+                </div>
+            </header>
+
+                <!-- 1.1.2 Spatial GSAP Callouts (V19 Radiating) -->
+                <div id="callout-1" class="sequence-callout"
+                    style="top:50%; left:50%; transform:translate(-50%, -50%);">
+                    <p
+                        style="font-family:var(--font-mono); color:var(--accent-color); font-size:0.8rem; margin-bottom:5px; letter-spacing:2px;">
+                        // PHASE_01: EXTRACTION</p>
+                    <h3 style="font-size:3rem; font-weight:900; text-transform:uppercase;">AEROSPACE CHASSIS</h3>
+                </div>
+
+                <div id="callout-2" class="sequence-callout"
+                    style="top:50%; left:50%; transform:translate(-50%, -50%);">
+                    <p
+                        style="font-family:var(--font-mono); color:var(--accent-violet); font-size:0.8rem; margin-bottom:5px; letter-spacing:2px;">
+                        // PHASE_02: CORE_EXPOSURE</p>
+                    <h3 style="font-size:3rem; font-weight:900; text-transform:uppercase;">NEURAL LOGIC</h3>
+                </div>
+
+                <div id="callout-3" class="sequence-callout"
+                    style="top:50%; left:50%; transform:translate(-50%, -50%);">
+                    <p
+                        style="font-family:var(--font-mono); color:var(--accent-color); font-size:0.8rem; margin-bottom:5px; letter-spacing:2px;">
+                        // PHASE_03: LOGISTICS_SYNC</p>
+                    <h3 style="font-size:3rem; font-weight:900; text-transform:uppercase;">GLOBAL SYSTEMS</h3>
+                </div>
+
+                <div id="callout-4" class="sequence-callout"
+                    style="top:50%; left:50%; transform:translate(-50%, -50%);">
+                    <p
+                        style="font-family:var(--font-mono); color:var(--accent-violet); font-size:0.8rem; margin-bottom:5px; letter-spacing:2px;">
+                        // PHASE_04: AUTONOMOUS_INIT</p>
+                    <h3 style="font-size:3rem; font-weight:900; text-transform:uppercase;">AUTONOMOUS LOGIC</h3>
+                </div>
+        </div>
+
+        </header>
+
+        <!-- 1.2 The 'Deep Dive' Intro Block -->
+        <section id="intro-detail" class="section"
+            style="padding:15vh 0; background:var(--bg-color); position:relative; z-index:2;">
+            <div class="container" style="max-width:1200px; margin:0 auto; padding:0 5vw;">
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:60px; align-items:center;">
+                    <div>
+                        <p style="font-family:var(--font-mono); color:var(--accent-color); margin-bottom:20px;">//
+                            SYSTEM OPERATIONAL</p>
+                        <h2 style="font-size:3.5rem; line-height:1.1; font-weight:900;">A Scalable Digital Ecosystem.
+                        </h2>
+                    </div>
+                    <div style="border-left:1px solid var(--border-color); padding-left:40px;">
+                        <p style="font-size:1.3rem; line-height:1.7; color:var(--text-secondary); font-weight:400;">At
+                            Tustar Co., we don't just build websites; we engineer scalable digital ecosystems. By fusing
+                            award-winning web technology with data-driven marketing strategies, we transform bold ideas
+                            into market-dominating realities. Whether you need a high-performance web application or a
+                            brand-scaling growth campaign, we provide the architecture for your success.</p>
+                        <div
+                            style="margin-top:40px; font-family:var(--font-mono); font-size:0.85rem; color:var(--text-secondary); opacity:0.6; display:flex; gap:30px;">
+                            <span>✓ STRATEGY CALL</span>
+                            <span>✓ AWARD-WINNING UI</span>
+                            <span>✓ ZERO UPFRONT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1.3 Cinematic Social Proof Banner -->
+        <div class="trust-marquee-wrapper"
+            style="border-top:1px solid var(--border-color); border-bottom:1px solid var(--border-color); padding:30px 0; background:rgba(5,10,17,0.8); backdrop-filter:blur(10px); position:relative; z-index:2; overflow:hidden;">
+            <div class="marquee-track"
+                style="display:flex; white-space:nowrap; width:max-content; animation: marquee-scroll 40s linear infinite;">
+                <div style="display:flex; gap:100px; padding-left:100px; align-items:center;">
+                    <span
+                        style="font-family:var(--font-mono); color:var(--accent-color); font-size:1rem; letter-spacing:2px; font-weight:bold; margin-right:50px;">//
+                        TRUSTED BY:</span>
+                    <span
+                        style="font-family:var(--font-heading); color:var(--text-secondary); font-size:1.4rem; font-weight:900; opacity:0.5;">AMAZON
+                        WEB SERVICES</span>
+                    <span
+                        style="font-family:var(--font-heading); color:var(--text-secondary); font-size:1.4rem; font-weight:900; opacity:0.5;">NEXT.JS
+                        FOUNDATION</span>
+                    <span
+                        style="font-family:var(--font-heading); color:var(--text-secondary); font-size:1.4rem; font-weight:900; opacity:0.5;">SOLIDWORKS
+                        INC.</span>
+                    <span
+                        style="font-family:var(--font-heading); color:var(--text-secondary); font-size:1.4rem; font-weight:900; opacity:0.5;">SONY
+                        MUSIC</span>
+                    <span
+                        style="font-family:var(--font-heading); color:var(--text-secondary); font-size:1.4rem; font-weight:900; opacity:0.5;">TESLA
+                        ARCHITECTURE</span>
+                    <span
+                        style="font-family:var(--font-heading); color:var(--text-secondary); font-size:1.4rem; font-weight:900; opacity:0.5;">WEBGL
+                        ENGINE</span>
+                    <!-- Clone for Seamless Loop -->
+                    <span
+                        style="font-family:var(--font-heading); color:var(--text-secondary); font-size:1.4rem; font-weight:900; opacity:0.5; margin-left:100px;">AMAZON
+                        WEB SERVICES</span>
+                    <span
+                        style="font-family:var(--font-heading); color:var(--text-secondary); font-size:1.4rem; font-weight:900; opacity:0.5;">NEXT.JS
+                        FOUNDATION</span>
+                    <span
+                        style="font-family:var(--font-heading); color:var(--text-secondary); font-size:1.4rem; font-weight:900; opacity:0.5;">SOLIDWORKS
+                        INC.</span>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            @keyframes marquee-scroll {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+        </style>
+
+        <!-- 1.4 Core Services Grid Framework -->
+        <section id="core-services" class="section"
+            style="padding:15vh 0; position:relative; z-index:2; background:var(--bg-color);">
+            <div class="container" style="max-width:1400px; margin:0 auto; padding:0 5vw;">
+                <div style="text-align:center; margin-bottom:80px;">
+                    <p
+                        style="font-family:var(--font-mono); color:var(--accent-color); margin-bottom:15px; letter-spacing:2px; text-transform:uppercase;">
+                        // Master Your Market</p>
+                    <h2 style="font-size:3.5rem; font-weight:900; margin-bottom:20px;">Comprehensive Digital Ecosystems.
+                    </h2>
+                    <p
+                        style="font-size:1.2rem; color:var(--text-secondary); max-width:800px; margin:0 auto; line-height:1.6;">
+                        We provide end-to-end technology and media solutions designed to scale your business. From
+                        captivating visual identities to robust enterprise software, our full-stack expertise ensures
+                        your digital presence is engineered for absolute dominance.</p>
+                </div>
+
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(350px, 1fr)); gap:30px;">
+                    <!-- Service 1 -->
+                    <div class="core-service-card"
+                        style="background:rgba(5,8,17,0.6); backdrop-filter:blur(15px); border:1px solid var(--border-color); padding:40px; border-radius:12px; transition:transform 0.3s, box-shadow 0.3s; position:relative; overflow:hidden;">
+                        <div
+                            style="width:50px; height:50px; border-radius:10px; background:rgba(0,229,255,0.1); display:flex; justify-content:center; align-items:center; margin-bottom:25px; border:1px solid rgba(0,229,255,0.2);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)"
+                                stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
+                        <h3 style="font-size:1.6rem; color:var(--text-primary); margin-bottom:15px;">Visual Storytelling
+                            & Design</h3>
+                        <p style="color:var(--text-secondary); line-height:1.6; font-size:1.05rem;">We craft premium
+                            visual assets that command attention and drive brand authority. Our services include
+                            high-retention video editing, motion graphics, and corporate graphic design that ensure your
+                            brand communicates its value instantly across all digital touchpoints.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="core-service-card"
+                        style="background:rgba(5,8,17,0.6); backdrop-filter:blur(15px); border:1px solid var(--border-color); padding:40px; border-radius:12px; transition:transform 0.3s, box-shadow 0.3s;">
+                        <div
+                            style="width:50px; height:50px; border-radius:10px; background:rgba(138,43,226,0.1); display:flex; justify-content:center; align-items:center; margin-bottom:25px; border:1px solid rgba(138,43,226,0.2);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-violet)"
+                                stroke-width="2">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                            </svg>
+                        </div>
+                        <h3 style="font-size:1.6rem; color:var(--text-primary); margin-bottom:15px;">Mobile App
+                            Engineering</h3>
+                        <p style="color:var(--text-secondary); line-height:1.6; font-size:1.05rem;">Architecting
+                            intuitive, high-performance mobile applications for both iOS and Android. We focus on
+                            seamless UI/UX design and robust, scalable backend infrastructure to deliver native and
+                            cross-platform mobile experiences that engage and retain users.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="core-service-card"
+                        style="background:rgba(5,8,17,0.6); backdrop-filter:blur(15px); border:1px solid var(--border-color); padding:40px; border-radius:12px; transition:transform 0.3s, box-shadow 0.3s;">
+                        <div
+                            style="width:50px; height:50px; border-radius:10px; background:rgba(0,229,255,0.1); display:flex; justify-content:center; align-items:center; margin-bottom:25px; border:1px solid rgba(0,229,255,0.2);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)"
+                                stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 style="font-size:1.6rem; color:var(--text-primary); margin-bottom:15px;">High-Conversion
+                            Websites</h3>
+                        <p style="color:var(--text-secondary); line-height:1.6; font-size:1.05rem;">Your website is your
+                            hardest-working sales representative. We build lightning-fast, highly responsive, and
+                            SEO-optimized corporate websites tailored to capture leads, convert visitors, and reflect
+                            the premium nature of your brand.</p>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="core-service-card"
+                        style="background:rgba(5,8,17,0.6); backdrop-filter:blur(15px); border:1px solid var(--border-color); padding:40px; border-radius:12px; transition:transform 0.3s, box-shadow 0.3s;">
+                        <div
+                            style="width:50px; height:50px; border-radius:10px; background:rgba(138,43,226,0.1); display:flex; justify-content:center; align-items:center; margin-bottom:25px; border:1px solid rgba(138,43,226,0.2);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-violet)"
+                                stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 style="font-size:1.6rem; color:var(--text-primary); margin-bottom:15px;">Custom Web
+                            Applications</h3>
+                        <p style="color:var(--text-secondary); line-height:1.6; font-size:1.05rem;">Transforming complex
+                            business logic into streamlined, user-friendly digital products. We develop secure,
+                            scalable, and dynamic web applications utilizing modern frameworks to solve unique
+                            operational challenges and drive digital transformation.</p>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="core-service-card"
+                        style="background:rgba(5,8,17,0.6); backdrop-filter:blur(15px); border:1px solid var(--border-color); padding:40px; border-radius:12px; transition:transform 0.3s, box-shadow 0.3s;">
+                        <div
+                            style="width:50px; height:50px; border-radius:10px; background:rgba(0,229,255,0.1); display:flex; justify-content:center; align-items:center; margin-bottom:25px; border:1px solid rgba(0,229,255,0.2);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)"
+                                stroke-width="2">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <h3 style="font-size:1.6rem; color:var(--text-primary); margin-bottom:15px;">Enterprise System
+                            Integration</h3>
+                        <p style="color:var(--text-secondary); line-height:1.6; font-size:1.05rem;">Eliminate data silos
+                            and automate your workflow. We build robust API integrations and custom middleware to
+                            seamlessly connect your disparate software systems, CRMs, and databases, resulting in
+                            flawless operational efficiency.</p>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="core-service-card"
+                        style="background:rgba(5,8,17,0.6); backdrop-filter:blur(15px); border:1px solid var(--border-color); padding:40px; border-radius:12px; transition:transform 0.3s, box-shadow 0.3s;">
+                        <div
+                            style="width:50px; height:50px; border-radius:10px; background:rgba(138,43,226,0.1); display:flex; justify-content:center; align-items:center; margin-bottom:25px; border:1px solid rgba(138,43,226,0.2);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-violet)"
+                                stroke-width="2">
+                                <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                                <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="font-size:1.6rem; color:var(--text-primary); margin-bottom:15px;">Strategic Digital
+                            Growth</h3>
+                        <p style="color:var(--text-secondary); line-height:1.6; font-size:1.05rem;">Beyond pure
+                            development, we offer holistic digital strategies. From search engine optimization (SEO) and
+                            technical consulting to cloud hosting solutions and digital marketing, we provide the
+                            ongoing support required to keep your digital ecosystem thriving.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            .core-service-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 10px 40px rgba(0, 229, 255, 0.1);
+                border-color: rgba(0, 229, 255, 0.3) !important;
+            }
+        </style>
+
+
+
+        <!-- 1.2 The Manifesto -->
+        <section class="section split-section digital-lab-section">
+            <div class="scanlines-overlay"></div>
+            <div class="about-left" style="z-index:2;">
+                <p style="font-family:var(--font-mono); color:var(--accent-color); margin-bottom:20px;">// THE MANIFESTO
+                </p>
+                <h2 style="font-size:3.5rem; line-height:1.1;">We don't just build websites. We engineer
+                    high-performance ecosystems.</h2>
+                <p style="font-size:1.2rem; margin-top:30px; color:var(--text-secondary); max-width:600px;">Our
+                    philosophy stems from deep engineering principles applied to visual expression. We craft fast,
+                    scalable, and visually devastating platforms tailored for total industry domination.</p>
+            </div>
+            <div class="about-right" style="border:none; z-index:2; position:relative;">
+                <div class="comparison-container"
+                    style="border:1px solid var(--border-color); border-radius:10px; background:rgba(255,255,255,0.02); position:relative; overflow:hidden; width:100%; height:450px;">
+                    <!-- Raw Image -->
+                    <img src="assets/comparison-before.png"
+                        style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; opacity:0.6;">
+
+                    <!-- High Fidelity Image (revealed by scanner) -->
+                    <div class="comparison-overlay"
+                        style="width:100%; height:100%; position:absolute; top:0; left:0; overflow:hidden; animation: comparison-scan 6s ease-in-out infinite;">
+                        <img src="assets/comparison-after.png" style="width:100%; height:450px; object-fit:cover;">
+                    </div>
+
+                    <!-- The Laser Line (Centered on revealing edge) -->
+                    <div class="laser-scanner"
+                        style="position:absolute; width:100%; height:2px; background:var(--accent-color); box-shadow:0 0 15px var(--accent-color); z-index:10; animation: laser-line-move 6s ease-in-out infinite;">
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                @keyframes laser-line-move {
+                    0% {
+                        top: 0%;
+                        box-shadow: 0 0 5px var(--accent-color);
+                    }
+
+                    50% {
+                        top: 100%;
+                        box-shadow: 0 0 20px var(--accent-color);
+                    }
+
+                    100% {
+                        top: 0%;
+                        box-shadow: 0 0 5px var(--accent-color);
+                    }
+                }
+
+                @keyframes comparison-scan {
+                    0% {
+                        height: 0%;
+                    }
+
+                    50% {
+                        height: 100%;
+                    }
+
+                    100% {
+                        height: 0%;
+                    }
+                }
+            </style>
+        </section>
+
+        <!-- 1.7 The Tustar Protocol (Our Process) -->
+        <section id="protocol" class="section"
+            style="padding:15vh 0; background:var(--bg-color); position:relative; z-index:2;">
+            <div class="container" style="max-width:1400px; margin:0 auto; padding:0 5vw;">
+                <div style="text-align:center; margin-bottom:100px;">
+                    <p
+                        style="font-family:var(--font-mono); color:var(--accent-color); margin-bottom:15px; letter-spacing:4px;">
+                        // OPERATIONAL WORKFLOW</p>
+                    <h2 style="font-size:3.5rem; font-weight:900;">The Tustar Protocol.</h2>
+                    <p style="color:var(--text-secondary); max-width:700px; margin:20px auto; font-size:1.1rem;">A
+                        precision-engineered 4-stage deployment cycle designed for absolute market dominance.</p>
+                </div>
+
+                <div
+                    style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:2px; background:var(--border-color); border:1px solid var(--border-color); border-radius:12px; overflow:hidden;">
+                    <!-- Step 1 -->
+                    <div style="background:var(--bg-color); padding:50px 40px; text-align:left; transition:background 0.3s;"
+                        class="protocol-step">
+                        <span
+                            style="font-family:var(--font-mono); color:var(--accent-color); font-size:0.8rem; display:block; margin-bottom:20px;">[
+                            STAGE_01 ]</span>
+                        <h3 style="font-size:1.5rem; margin-bottom:20px; letter-spacing:-1px;">RECON</h3>
+                        <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.6;">Deep-dive
+                            consultation and market architecture mapping. We identify the high-ground before we build.
+                        </p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div style="background:var(--bg-color); padding:50px 40px; text-align:left; transition:background 0.3s;"
+                        class="protocol-step">
+                        <span
+                            style="font-family:var(--font-mono); color:var(--accent-violet); font-size:0.8rem; display:block; margin-bottom:20px;">[
+                            STAGE_02 ]</span>
+                        <h3 style="font-size:1.5rem; margin-bottom:20px; letter-spacing:-1px;">ARCH</h3>
+                        <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.6;">System design and
+                            visual engineering. Constructing the scalable core of your digital identity.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div style="background:var(--bg-color); padding:50px 40px; text-align:left; transition:background 0.3s;"
+                        class="protocol-step">
+                        <span
+                            style="font-family:var(--font-mono); color:var(--accent-color); font-size:0.8rem; display:block; margin-bottom:20px;">[
+                            STAGE_03 ]</span>
+                        <h3 style="font-size:1.5rem; margin-bottom:20px; letter-spacing:-1px;">INIT</h3>
+                        <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.6;">Rapid deployment and
+                            precision coding. We bring your ecosystem online with mil-spec stability.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div style="background:var(--bg-color); padding:50px 40px; text-align:left; transition:background 0.3s;"
+                        class="protocol-step">
+                        <span
+                            style="font-family:var(--font-mono); color:var(--accent-violet); font-size:0.8rem; display:block; margin-bottom:20px;">[
+                            STAGE_04 ]</span>
+                        <h3 style="font-size:1.5rem; margin-bottom:20px; letter-spacing:-1px;">SCALE</h3>
+                        <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.6;">Global optimization
+                            and performance monitoring. Ensuring your brand stays at peak operational capacity.</p>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .protocol-step:hover {
+                    background: rgba(255, 255, 255, 0.03) !important;
+                }
+            </style>
+        </section>
+
+        <!-- 1.4 Why Tustar? (Competitive Advantages) -->
+        <section id="why-tustar" class="section"
+            style="padding:15vh 0; background:rgba(5,10,17,0.5); position:relative; z-index:2;">
+            <div class="container" style="max-width:1400px; margin:0 auto; padding:0 5vw;">
+                <div style="text-align:left; margin-bottom:80px;">
+                    <p
+                        style="font-family:var(--font-mono); color:var(--accent-color); margin-bottom:15px; letter-spacing:3px;">
+                        // STRATEGIC SUPERIORITY</p>
+                    <h2 style="font-size:4rem; font-weight:900; line-height:1;">Why Partner <br>with Tustar Co.?</h2>
+                </div>
+
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:40px;">
+                    <div
+                        style="padding:30px; border-left:2px solid var(--accent-color); background:rgba(255,255,255,0.02);">
+                        <h4
+                            style="font-family:var(--font-mono); color:var(--text-primary); margin-bottom:15px; font-size:1.2rem;">
+                            01. SCALABLE INFRASTRUCTURE</h4>
+                        <p style="color:var(--text-secondary); font-size:1rem; line-height:1.6;">Our websites aren't
+                            static; they are high-performance engines built to handle massive traffic surges and global
+                            deployment.</p>
+                    </div>
+                    <div
+                        style="padding:30px; border-left:2px solid var(--accent-violet); background:rgba(255,255,255,0.02);">
+                        <h4
+                            style="font-family:var(--font-mono); color:var(--text-primary); margin-bottom:15px; font-size:1.2rem;">
+                            02. VFX & MOTION MASTERY</h4>
+                        <p style="color:var(--text-secondary); font-size:1rem; line-height:1.6;">We bring
+                            cinematic-level visual effects and motion design to your brand, ensuring you don't just
+                            exist—you dominate.</p>
+                    </div>
+                    <div
+                        style="padding:30px; border-left:2px solid var(--accent-color); background:rgba(255,255,255,0.02);">
+                        <h4
+                            style="font-family:var(--font-mono); color:var(--text-primary); margin-bottom:15px; font-size:1.2rem;">
+                            03. DATA-DRIVEN ARCHITECTURE</h4>
+                        <p style="color:var(--text-secondary); font-size:1rem; line-height:1.6;">Every pixel is
+                            intentional. We use advanced behavioral data to engineer high-conversion user interfaces
+                            that drive revenue.</p>
+                    </div>
+                    <div
+                        style="padding:30px; border-left:2px solid var(--accent-violet); background:rgba(255,255,255,0.02);">
+                        <h4
+                            style="font-family:var(--font-mono); color:var(--text-primary); margin-bottom:15px; font-size:1.2rem;">
+                            04. ZERO-FAILURE OPERATIONS</h4>
+                        <p style="color:var(--text-secondary); font-size:1rem; line-height:1.6;">Absolute security and
+                            high-availability come standard. We protect your digital ecosystem while optimizing for
+                            performance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1.8 Ecosystem Performance (Stats Section) -->
+        <section id="performance" class="section"
+            style="padding:15vh 0; background:linear-gradient(to bottom, transparent, rgba(0,229,255,0.03), transparent); position:relative; z-index:2;">
+            <div class="container" style="max-width:1200px; margin:0 auto; padding:0 5vw;">
+                <div
+                    style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:60px; text-align:center;">
+                    <!-- Stat 1 -->
+                    <div class="stat-card">
+                        <div
+                            style="font-size:4rem; font-weight:900; color:var(--text-primary); margin-bottom:10px; font-family:var(--font-heading); display:flex; align-items:baseline; justify-content:center;">
+                            99<span style="font-size:1.5rem; color:var(--accent-color);">.9%</span></div>
+                        <p
+                            style="font-family:var(--font-mono); color:var(--accent-color); font-size:0.8rem; letter-spacing:2px;">
+                            // UPTIME_VERIFIED</p>
+                    </div>
+                    <!-- Stat 2 -->
+                    <div class="stat-card">
+                        <div
+                            style="font-size:4rem; font-weight:900; color:var(--text-primary); margin-bottom:10px; font-family:var(--font-heading); display:flex; align-items:baseline; justify-content:center;">
+                            &lt;50<span style="font-size:1.5rem; color:var(--accent-violet);">ms</span></div>
+                        <p
+                            style="font-family:var(--font-mono); color:var(--accent-violet); font-size:0.8rem; letter-spacing:2px;">
+                            // GLOBAL_LATENCY</p>
+                    </div>
+                    <!-- Stat 3 -->
+                    <div class="stat-card">
+                        <div
+                            style="font-size:4rem; font-weight:900; color:var(--text-primary); margin-bottom:10px; font-family:var(--font-heading); display:flex; align-items:baseline; justify-content:center;">
+                            50<span style="font-size:1.5rem; color:var(--accent-color);">M+</span></div>
+                        <p
+                            style="font-family:var(--font-mono); color:var(--accent-color); font-size:0.8rem; letter-spacing:2px;">
+                            // DATA_THROUGHPUT</p>
+                    </div>
+                    <!-- Stat 4 -->
+                    <div class="stat-card">
+                        <div
+                            style="font-size:4rem; font-weight:900; color:var(--text-primary); margin-bottom:10px; font-family:var(--font-heading); display:flex; align-items:baseline; justify-content:center;">
+                            100<span style="font-size:1.5rem; color:var(--accent-violet);">%</span></div>
+                        <p
+                            style="font-family:var(--font-mono); color:var(--accent-violet); font-size:0.8rem; letter-spacing:2px;">
+                            // SECURE_FAILOVER</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1.3 Service Snapshot -->
+        <section class="section" style="background:rgba(255,255,255,0.02);">
+            <div class="page-header text-center">
+                <p style="font-family:var(--font-mono); color:var(--accent-color); margin-bottom:10px;">// CORE PILLARS
+                </p>
+                <h1>TACTICAL CAPABILITIES</h1>
+            </div>
+
+            <div class="services-3col"
+                style="display:grid; grid-template-columns:repeat(3, 1fr); gap:40px; margin-top:60px;">
+                <div data-deep-dive="case-study.html" class="service-snapshot-card tilt-card"
+                    style="padding:50px 30px; border:1px solid var(--border-color); background-image:linear-gradient(rgba(8,8,8,0.7), rgba(8,8,8,0.9)), url('assets/1.jpg'); background-size:cover; background-position:center; border-radius:10px; display:block; position:relative; overflow:hidden;">
+                    <h3
+                        style="font-size:1.8rem; margin-bottom:20px; color:var(--text-primary); position:relative; z-index:2;">
+                        01. WEB ARCHITECTURE</h3>
+                    <p
+                        style="color:var(--text-secondary); font-size:1.1rem; line-height:1.6; position:relative; z-index:2;">
+                        High-performance coding, React/Vanilla JS mastery, and scalable robust foundations.</p>
+                </div>
+                <div data-deep-dive="case-study.html" class="service-snapshot-card tilt-card"
+                    style="padding:50px 30px; border:1px solid var(--border-color); background-image:linear-gradient(rgba(8,8,8,0.7), rgba(8,8,8,0.9)), url('assets/project-02.jpg'); background-size:cover; background-position:center; border-radius:10px; display:block; position:relative; overflow:hidden;">
+                    <h3
+                        style="font-size:1.8rem; margin-bottom:20px; color:var(--text-primary); position:relative; z-index:2;">
+                        02. VFX & EDITING</h3>
+                    <p
+                        style="color:var(--text-secondary); font-size:1.1rem; line-height:1.6; position:relative; z-index:2;">
+                        Datamoshing, cinematic color grading, and high-conversion video assets.</p>
+                </div>
+                <div data-deep-dive="case-study.html" class="service-snapshot-card tilt-card"
+                    style="padding:50px 30px; border:1px solid var(--border-color); background-image:linear-gradient(rgba(8,8,8,0.7), rgba(8,8,8,0.9)), url('assets/cad-sim.jpg'); background-size:cover; background-position:center; border-radius:10px; display:block; position:relative; overflow:hidden;">
+                    <h3
+                        style="font-size:1.8rem; margin-bottom:20px; color:var(--text-primary); position:relative; z-index:2;">
+                        03. ENGINEERING</h3>
+                    <p
+                        style="color:var(--text-secondary); font-size:1.1rem; line-height:1.6; position:relative; z-index:2;">
+                        Physical drone structures, eVTOL flight paths, and robust CAD simulation pipelines.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1.4 Highlight Reel -->
+        <section class="section horizontal-scroll-wrapper" style="overflow:hidden; padding: 15vh 0;">
+            <div class="container" style="padding-left: 5vw; margin-bottom:60px;">
+                <p style="font-family:var(--font-mono); color:var(--accent-color); margin-bottom:10px;">// HIGHLIGHT
+                    REEL</p>
+                <h1>VERIFIED BUILDS</h1>
+            </div>
+            <div class="horizontal-scroll-container hl-scroll"
+                style="display:flex; gap:60px; padding:0 5vw; width:300vw;">
+                <!-- Project 1 -->
+                <a href="case-study.html" class="highlight-card tilt-card"
+                    style="width:70vw; flex-shrink:0; text-decoration:none; display:block;">
+                    <div class="asset-placeholder project-placeholder"
+                        style="border-radius:10px; overflow:hidden; position:relative;">
+                        <img src="assets/project-01.jpg"
+                            style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; z-index:0; opacity:0.8;">
+                        <div class="placeholder-label" style="position:relative; z-index:2;">PROJECT_ARCHIVE_01</div>
+                    </div>
+                    <h3 style="margin-top:25px; font-size:2.5rem; color:var(--text-primary);">CityGrub UX Restructure
+                    </h3>
+                    <p style="font-family:var(--font-mono); color:var(--accent-color); margin-top:10px;">APP DESIGN /
+                        WEB ARCHITECTURE</p>
+                </a>
+                <!-- Project 2 -->
+                <a href="case-study.html" class="highlight-card tilt-card"
+                    style="width:70vw; flex-shrink:0; text-decoration:none; display:block;">
+                    <div class="asset-placeholder project-placeholder"
+                        style="border-radius:10px; overflow:hidden; position:relative;">
+                        <img src="assets/project-02.jpg"
+                            style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; z-index:0; opacity:0.8;">
+                        <div class="placeholder-label" style="position:relative; z-index:2;">PROJECT_ARCHIVE_02</div>
+                    </div>
+                    <h3 style="margin-top:25px; font-size:2.5rem; color:var(--text-primary);">Scattpack VFX Launch</h3>
+                    <p style="font-family:var(--font-mono); color:var(--accent-color); margin-top:10px;">VIDEO EDITING /
+                        COLOR GRADE</p>
+                </a>
+                <!-- Project 3 -->
+                <a href="case-study.html" class="highlight-card tilt-card"
+                    style="width:70vw; flex-shrink:0; text-decoration:none; display:block;">
+                    <div class="asset-placeholder project-placeholder"
+                        style="border-radius:10px; overflow:hidden; position:relative;">
+                        <img src="assets/project-03.jpg"
+                            style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; z-index:0; opacity:0.8;">
+                        <div class="placeholder-label" style="position:relative; z-index:2;">PROJECT_ARCHIVE_03</div>
+                    </div>
+                    <h3 style="margin-top:25px; font-size:2.5rem; color:var(--text-primary);">eVTOL Flight Simulation
+                    </h3>
+                    <p style="font-family:var(--font-mono); color:var(--accent-color); margin-top:10px;">CAD SIMULATION
+                        / DRONE FLIGHT</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- 1.6 Command Feedback (Testimonials) -->
+        <!-- Kenyan Identity: Leadership Representation -->
+        <section id="testimonials" class="section"
+            style="padding:15vh 0; position:relative; z-index:2; background:var(--bg-color); border-top:1px solid var(--border-color);">
+            <div class="container" style="max-width:1400px; margin:0 auto; padding:0 5vw;">
+                <div style="text-align:center; margin-bottom:80px;">
+                        <p
+                            style="font-family:var(--font-mono); color:var(--accent-color); margin-bottom:15px; letter-spacing:4px;">
+                            // CLIENT TESTIMONIALS</p>
+                    <h2 style="font-size:3.5rem; font-weight:900;">Verified Kenyan Operator Reviews.</h2>
+                </div>
+
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(400px, 1fr)); gap:40px;">
+                    <!-- Testimonial 1 -->
+                    <div
+                        style="padding:50px; border:1px solid var(--border-color); background:rgba(255,255,255,0.01); border-radius:10px; position:relative;">
+                        <div
+                            style="font-size:3rem; color:var(--accent-color); position:absolute; top:30px; right:40px; opacity:0.1;">
+                            "</div>
+                        <p
+                            style="font-size:1.2rem; color:var(--text-secondary); line-height:1.7; font-style:italic; margin-bottom:30px;">
+                            "The engineering precision Tustar applies to digital architecture is staggering. Our
+                            transition to a unified tech stack at Rift Valley Tech was flawless."</p>
+                        <div>
+                            <h4
+                                style="color:var(--text-primary); margin:0; text-transform:uppercase; letter-spacing:1px;">
+                                Juma Omari</h4>
+                            <p
+                                style="font-family:var(--font-mono); color:var(--accent-color); font-size:0.8rem; margin:0; margin-top:5px;">
+                                CEO, RIFT VALLEY TECH</p>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div
+                        style="padding:50px; border:1px solid var(--border-color); background:rgba(255,255,255,0.01); border-radius:10px; position:relative;">
+                        <div
+                            style="font-size:3rem; color:var(--accent-violet); position:absolute; top:30px; right:40px; opacity:0.1;">
+                            "</div>
+                        <p
+                            style="font-size:1.2rem; color:var(--text-secondary); line-height:1.7; font-style:italic; margin-bottom:30px;">
+                            "Absolute dominance in our sector. The high-performance mobile application Tustar built
+                            manages our complex logistics across East Africa with zero failure rates."</p>
+                        <div>
+                            <h4
+                                style="color:var(--text-primary); margin:0; text-transform:uppercase; letter-spacing:1px;">
+                                Wanjiku Njenga</h4>
+                            <p
+                                style="font-family:var(--font-mono); color:var(--accent-color); font-size:0.8rem; margin:0; margin-top:5px;">
+                                FOUNDER, NYOTA DIGITAL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1.5 Final Conversion Area -->
+        <section id="final-cta" class="section"
+            style="padding:20vh 0; text-align:center; position:relative; z-index:2; background:var(--bg-color); border-top:1px solid var(--border-color);">
+            <div class="container">
+                <p
+                    style="font-family:var(--font-mono); color:var(--accent-color); margin-bottom:20px; letter-spacing:4px;">
+                    // GET STARTED</p>
+                <h2 style="font-size: clamp(3rem, 10vw, 6rem); font-weight:900; line-height:1; margin-bottom:60px;">
+                    READY TO SCALE <br>YOUR BRAND?</h2>
+
+                <div style="display:flex; gap:30px; justify-content:center; flex-wrap:wrap;">
+                    <a href="contact.html" class="button button-primary"
+                        style="padding:22px 60px; font-size:1.2rem; background:var(--gradient-primary); color:#000; border:none; text-decoration:none; font-weight:900; border-radius:5px; box-shadow: 0 0 30px rgba(138,43,226,0.2);">[
+                        CONTACT OUR TEAM ]</a>
+                    <a href="services.html" class="button"
+                        style="padding:22px 60px; font-size:1.2rem; border:1px solid var(--accent-color); color:var(--text-primary); text-decoration:none; border-radius:5px;">[
+                        OUR CAPABILITIES ]</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Global Footer Injector -->
+        <div id="global-footer-container"></div>
+
+        </div>
+    </main>
+
+    <!-- 8.0 Nexus Oracle (Gemini AI Integration) -->
+    <!-- 8.0 Nexus Oracle V2.1 (WhatsApp-Style Architecture) -->
+    <div id="nexus-oracle-glow"></div>
+    <div id="oracle-status-label"></div>
+    <div id="social-status-label"></div>
+    <div id="nexus-oracle-toggle" title="CONSULT_STRATEGIST">
+        <!-- Floating Brand Icon handled by CSS -->
+    </div>
+
+    <!-- Nexus Oracle V30: The 'Tony' Edition -->
+    <div id="nexus-oracle-container">
+        <div id="oracle-header">
+            <div class="oracle-title-group">
+                <img src="assets/NEXUS ORACLE.jpg" class="oracle-avatar" alt="Tony">
+                <div style="display:flex; flex-direction:column; line-height: 1.2;">
+                    <span style="font-weight:700; font-size:1.1rem;">Nexus</span>
+                    <span style="font-size:0.75rem; opacity:0.9;">Tustar Lead Strategist • Online</span>
+                </div>
+            </div>
+            <div id="oracle-close"><i class="fas fa-times"></i></div>
+        </div>
+        <div id="oracle-output">
+            <!-- Professional Introduction Message -->
+            <div class="oracle-msg AI">
+                Hello! I am Nexus, your Tustar Co. strategist. How can I help you today?
+            </div>
+        </div>
+        <form id="oracle-form">
+            <div id="oracle-input-area">
+                <input type="text" id="oracle-input" placeholder="Type your strategic query..." autocomplete="off">
+                <button type="submit" id="oracle-send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/gsap-animations.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/gemini.js"></script>
+</body>
+
+</html>
