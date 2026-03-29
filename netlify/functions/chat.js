@@ -22,7 +22,7 @@ app.post('/api/chat', async (req, res) => {
     const apiKey = process.env.GEMINI_API_KEY;
     
     if (!apiKey || apiKey === 'YOUR_GEMINI_API_KEY_HERE') {
-        return res.status(503).send(`[SYSTEM_LOG] MISSION_CONTROL_OFFLINE: MISSING_API_KEY. Please set the GEMINI_API_KEY in your Netlify dashboard.`);
+        return res.status(503).send(`Our AI assistant is currently unavailable as we finalize system configurations. Please reach out to our team at mwangilewis205@gmail.com for immediate strategy consultations.`);
     }
 
     try {

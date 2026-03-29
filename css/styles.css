@@ -566,12 +566,12 @@ body.page-entered .loader-content { opacity: 0; transition: opacity 0.4s; }
 
 #nexus-oracle-container {
     position: fixed;
-    bottom: 110px; left: 30px;
+    bottom: 110px; right: 30px; /* Moved to Right to align with trigger */
     width: 420px;
     height: 75vh;
-    background: rgba(5, 12, 22, 0.85); /* Semi-Transparent Navy */
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(0, 229, 255, 0.3);
+    background: rgba(13, 17, 23, 0.88); /* Premium Professional Dark Slate */
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.08); /* Subtle Professional Border */
     border-radius: 20px;
     z-index: 2500;
     display: none; flex-direction: column;
@@ -580,7 +580,7 @@ body.page-entered .loader-content { opacity: 0; transition: opacity 0.4s; }
     overflow: hidden;
     font-family: 'Inter', sans-serif;
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
-    transform: translateY(20px) translateX(-20px);
+    transform: translateY(20px) translateX(20px);
 }
 
 #nexus-oracle-container.active {
@@ -590,13 +590,13 @@ body.page-entered .loader-content { opacity: 0; transition: opacity 0.4s; }
 }
 
 #oracle-header {
-    background: linear-gradient(135deg, #007aff, #00e5ff); /* Solid Tony Blue/Cyan */
+    background: linear-gradient(135deg, #161b22, #0d1117); /* Professional Monochromatic Dark */
     padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 .oracle-title-group { display: flex; align-items: center; gap: 15px; }
@@ -730,14 +730,14 @@ body.page-entered .loader-content { opacity: 0; transition: opacity 0.4s; }
 
 #nexus-oracle-toggle {
     position: fixed;
-    bottom: 30px; left: 30px;
+    bottom: 30px; right: 30px; /* Standard Right Placement */
     width: 65px; height: 65px;
     background-image: url('../assets/NEXUS ORACLE.jpg');
     background-size: cover;
     background-position: center;
     border: 2px solid var(--accent-color);
     border-radius: 50%;
-    z-index: 2000;
+    z-index: 2600; /* Ensure it stays above common elements */
     cursor: pointer;
     box-shadow: 0 10px 40px rgba(0,229,255,0.4);
     transition: all 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);

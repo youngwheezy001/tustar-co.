@@ -38,9 +38,7 @@ Convert to CTA: Direct to [Contact Page](contact.html) if they need specific pro
 `;
 
 app.post('/api/chat', async (req, res) => {
-    if (!isOracleOperational) {
-        return res.status(503).send(`[SYSTEM_LOG] MISSION_CONTROL_OFFLINE: ${oracleError || 'AUTHENTICATION_REQUIRED'}. Please verify your .env configuration.`);
-    }
+        return res.status(503).send(`Our AI assistant is temporarily offline while we update its core logic. Please feel free to reach out directly via our contact page for immediate assistance.`);
 
     try {
         const { message, history } = req.body;
