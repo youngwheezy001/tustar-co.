@@ -566,7 +566,7 @@ body.page-entered .loader-content { opacity: 0; transition: opacity 0.4s; }
 
 #nexus-oracle-container {
     position: fixed;
-    bottom: 110px; right: 30px; /* Moved to Right to align with trigger */
+    bottom: 110px; left: 30px; /* Reverted to Left per user request */
     width: 420px;
     height: 75vh;
     background: rgba(13, 17, 23, 0.88); /* Premium Professional Dark Slate */
@@ -580,7 +580,7 @@ body.page-entered .loader-content { opacity: 0; transition: opacity 0.4s; }
     overflow: hidden;
     font-family: 'Inter', sans-serif;
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
-    transform: translateY(20px) translateX(20px);
+    transform: translateY(20px) translateX(-20px);
 }
 
 #nexus-oracle-container.active {
@@ -730,7 +730,7 @@ body.page-entered .loader-content { opacity: 0; transition: opacity 0.4s; }
 
 #nexus-oracle-toggle {
     position: fixed;
-    bottom: 30px; right: 30px; /* Standard Right Placement */
+    bottom: 30px; left: 30px; /* Reverted to Left per user request */
     width: 65px; height: 65px;
     background-image: url('../assets/NEXUS ORACLE.jpg');
     background-size: cover;
