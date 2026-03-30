@@ -1,0 +1,17 @@
+{
+  "name": "tustar-co",
+  "version": "1.0.0",
+  "description": "Premium Digital Ecosystem Branding",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "echo 'No build step required'"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "serverless-http": "^3.2.0"
+  }
+}

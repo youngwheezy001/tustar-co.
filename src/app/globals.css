@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #050811;
+  --foreground: #ffffff;
+  --accent-color: #00E5FF;
+  --secondary-color: #00ff31;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --border-color: rgba(255,255,255,0.1);
+  --card-bg: rgba(255,255,255,0.01);
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--background); }
+::-webkit-scrollbar-thumb { background: var(--accent-color); border-radius: 10px; }
+
+/* Nexus AI Container Styling */
+.oracle-container {
+    mask-image: radial-gradient(circle at center, black 0%, transparent 100%);
+    -webkit-mask-image: radial-gradient(circle at center, black 0%, transparent 100%);
+}
+
+@keyframes flicker {
+  0% { opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { opacity: 0.8; }
+}
+
+.flicker-vfx { animation: flicker 2s infinite; }

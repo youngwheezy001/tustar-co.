@@ -1,17 +1,38 @@
 {
-  "name": "tustar-co",
-  "version": "1.0.0",
-  "description": "Premium Digital Ecosystem Branding",
-  "main": "index.html",
+  "name": "warped-expanse",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "node server/index.js",
-    "build": "echo 'No build step required'"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
-    "cors": "^2.8.6",
-    "dotenv": "^17.3.1",
-    "express": "^5.2.1",
-    "serverless-http": "^3.2.0"
+    "@radix-ui/react-slot": "^1.2.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.38.0",
+    "gsap": "^3.14.2",
+    "lenis": "^1.1.18",
+    "lucide-react": "^1.7.0",
+    "motion": "^12.38.0",
+    "next": "16.2.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-use-measure": "^2.1.7",
+    "tailwind-merge": "^3.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.1",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5"
   }
 }
