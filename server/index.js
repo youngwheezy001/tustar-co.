@@ -38,7 +38,7 @@ Convert to CTA: Direct to [Contact Page](contact.html) if they need specific pro
 `;
 
 app.post('/api/chat', async (req, res) => {
-        return res.status(503).send(`Our AI assistant is temporarily offline while we update its core logic. Please feel free to reach out directly via our contact page for immediate assistance.`);
+        return res.status(503).send(`Nexus is currently undergoing a scheduled strategy optimization. Please reach out to our executive team for immediate project consulting.`);
 
     try {
         const { message, history } = req.body;

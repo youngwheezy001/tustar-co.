@@ -379,7 +379,26 @@ body { cursor: none; }
     position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
     z-index: 100000; overflow: hidden;
     display: flex; justify-content: center; align-items: center; 
-    background: #050c16;
+    background: radial-gradient(circle at center, #0a192f 0%, #050c16 100%); /* Depth Gradient */
+}
+#cinematic-preloader::before {
+    content: "";
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* Subtle Noise/Grain */
+    opacity: 0.1;
+    pointer-events: none;
+}
+/* Scanning Line VFX */
+#cinematic-preloader::after {
+    content: "";
+    position: absolute; top: -100%; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 229, 255, 0.05) 50%, transparent 100%);
+    animation: scanner-sweep 3s linear infinite;
+    pointer-events: none;
+}
+@keyframes scanner-sweep {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(200%); }
 }
 
 .loader-telemetry {
@@ -618,12 +637,7 @@ body.page-entered .loader-content { opacity: 0; transition: opacity 0.4s; }
     padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    background: rgba(10, 15, 30, 0.4); 
-    position: relative;
-    font-size: 1.05rem;
-    overflow-y: auto;
-    z-index: 2;
+    overscroll-behavior: contain; /* Prevents main page scroll chaining */
 }
 
 /* V34 Nexus Atmospheric Aura Layer */

@@ -22,7 +22,7 @@ app.post('/api/chat', async (req, res) => {
     const apiKey = process.env.GEMINI_API_KEY;
     
     if (!apiKey || apiKey === 'YOUR_GEMINI_API_KEY_HERE') {
-        return res.status(503).send(`Our AI assistant is currently unavailable as we finalize system configurations. Please reach out to our team at mwangilewis205@gmail.com for immediate strategy consultations.`);
+        return res.status(503).send(`Nexus is currently undergoing a scheduled strategy optimization. For immediate assistance with your digital ecosystem, please reach out to our executive team at mwangilewis205@gmail.com.`);
     }
 
     try {

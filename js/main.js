@@ -104,35 +104,43 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
+            const startTime = Date.now();
+            const minDuration = 2000; // 2 seconds minimum cinematic duration
+
             function completeLoader() {
-                clearInterval(telInterval);
-                sessionStorage.setItem('tustar_preloaded', 'true');
-                gsap.to(preloader.querySelector('.loader-content'), { opacity: 0, duration: 0.4 });
-                
-                // Audio Engine: Cinematic Startup Chime
-                if (window.AudioContext || window.webkitAudioContext) {
-                    try {
-                        let audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-                        if (audioCtx.state === 'suspended') audioCtx.resume();
-                        let osc = audioCtx.createOscillator();
-                        let gainNode = audioCtx.createGain();
-                        osc.type = 'sawtooth';
-                        osc.frequency.setValueAtTime(40, audioCtx.currentTime);
-                        osc.frequency.exponentialRampToValueAtTime(10, audioCtx.currentTime + 2.0);
-                        gainNode.gain.setValueAtTime(0, audioCtx.currentTime);
-                        gainNode.gain.linearRampToValueAtTime(0.15, audioCtx.currentTime + 0.1);
-                        gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 3.0);
-                        osc.connect(gainNode);
-                        gainNode.connect(audioCtx.destination);
-                        osc.start(); osc.stop(audioCtx.currentTime + 3.0);
-                    } catch(e) {}
-                }
+                const elapsed = Date.now() - startTime;
+                const remaining = Math.max(0, minDuration - elapsed);
 
                 setTimeout(() => {
-                    document.body.classList.add('page-entered');
-                    document.body.style.overflow = "";
-                    setTimeout(() => { preloader.style.display = 'none'; }, 1000);
-                }, 400);
+                    clearInterval(telInterval);
+                    sessionStorage.setItem('tustar_preloaded', 'true');
+                    gsap.to(preloader.querySelector('.loader-content'), { opacity: 0, duration: 0.4 });
+                    
+                    // Audio Engine: Cinematic Startup Chime
+                    if (window.AudioContext || window.webkitAudioContext) {
+                        try {
+                            let audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                            if (audioCtx.state === 'suspended') audioCtx.resume();
+                            let osc = audioCtx.createOscillator();
+                            let gainNode = audioCtx.createGain();
+                            osc.type = 'sawtooth';
+                            osc.frequency.setValueAtTime(40, audioCtx.currentTime);
+                            osc.frequency.exponentialRampToValueAtTime(10, audioCtx.currentTime + 2.0);
+                            gainNode.gain.setValueAtTime(0, audioCtx.currentTime);
+                            gainNode.gain.linearRampToValueAtTime(0.15, audioCtx.currentTime + 0.1);
+                            gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 3.0);
+                            osc.connect(gainNode);
+                            gainNode.connect(audioCtx.destination);
+                            osc.start(); osc.stop(audioCtx.currentTime + 3.0);
+                        } catch(e) {}
+                    }
+
+                    setTimeout(() => {
+                        document.body.classList.add('page-entered');
+                        document.body.style.overflow = "";
+                        setTimeout(() => { preloader.style.display = 'none'; }, 1000);
+                    }, 400);
+                }, remaining);
             }
 
             function updateLoaderUI(p) {
@@ -154,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         let p = Math.round((loadedCount / frameCount) * 100);
                         updateLoaderUI(p);
                         if (loadedCount === 1) { resizeCanvas(); canvasLoaded = true; }
-                        if (loadedCount === frameCount) setTimeout(completeLoader, 500);
+                        if (loadedCount === 10) completeLoader(); // Accelerated Entry Logic
                     };
                     images.push(img);
                 }
