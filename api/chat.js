@@ -10,10 +10,9 @@ module.exports = async (req, res) => {
         return res.status(200).end();
     }
 
-    const apiKey = process.env.GEMINI_API_KEY;
-    
     if (!apiKey || apiKey === 'YOUR_GEMINI_API_KEY_HERE') {
-        return res.status(503).send(`Nexus is currently undergoing a scheduled strategy optimization. For immediate assistance with your digital ecosystem, please reach out to our executive team at mwangilewis205@gmail.com.`);
+        console.error('CRITICAL: GEMINI_API_KEY is null or placeholder. Ensure it is set in Vercel Project Settings.');
+        return res.status(503).send(`Nexus is currently undergoing a scheduled strategy optimization. To enable full AI functionality, please ensure the system environment variables are finalized in the dashboard.`);
     }
 
     try {

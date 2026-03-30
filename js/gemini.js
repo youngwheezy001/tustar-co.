@@ -120,6 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     oracleToggle.addEventListener('click', () => {
         const isOpen = oracleContainer.style.display === 'flex';
         if (!isOpen) {
+            document.body.classList.add('no-scroll'); // LOCK SCROLL
             gsap.to(oracleContainer, { display: 'flex', opacity: 1, y: 0, duration: 0.6, ease: "power4.out" });
             oracleInput.focus();
         } else {
@@ -130,6 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
     oracleClose.addEventListener('click', closeOracle);
 
     function closeOracle() {
+        document.body.classList.remove('no-scroll'); // UNLOCK SCROLL
         gsap.to(oracleContainer, {
             opacity: 0, y: 30, duration: 0.4, ease: "power4.in", onComplete: () => {
                 oracleContainer.style.display = 'none';

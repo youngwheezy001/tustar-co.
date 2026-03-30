@@ -582,10 +582,11 @@ document.addEventListener('DOMContentLoaded', () => {
             // Premium Transition Audio/Visual
             playClickSound();
             const overlay = document.getElementById('transition-wipe');
+            gsap.set(overlay, { display: 'block', y: '100%' });
             gsap.to(overlay, { 
-                scaleY: 1, 
-                duration: 0.8, 
-                ease: "power4.inOut", 
+                y: '0%', 
+                duration: 0.4, 
+                ease: "power2.in", 
                 onComplete: () => { window.location.href = url; } 
             });
         });

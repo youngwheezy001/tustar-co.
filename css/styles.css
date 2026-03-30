@@ -27,6 +27,7 @@ body {
     opacity: 0;
     transition: opacity 0.5s cubic-bezier(0.8, 0, 0.2, 1);
 }
+.no-scroll { overflow: hidden !important; }
 
 body.page-entered {
     opacity: 1;
@@ -421,7 +422,7 @@ body { cursor: none; }
 }
 .scan-ring {
     position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-    width: 160px; height: 160px; border: 1px solid rgba(0,255,49,0.2);
+    width: 220px; height: 220px; border: 1px solid rgba(0,255,49,0.3);
     border-radius: 50%;
 }
 
@@ -437,18 +438,19 @@ body { cursor: none; }
     transform-style: preserve-3d;
 }
 .industrial-drone {
-    position: absolute; top: 0; left: 0; width: 60px; height: 60px;
-    filter: drop-shadow(0 0 10px var(--accent-color));
+    position: absolute; top: 0; left: 0; width: 90px; height: 90px;
+    filter: drop-shadow(0 0 20px var(--accent-color));
 }
 .drone-svg { width: 100%; height: 100%; }
 
 .loader-status-container { margin-top: 30px; }
 .loader-percentage {
-    font-family: var(--font-mono); color: var(--accent-color); font-size: 2.5rem;
+    font-family: var(--font-mono); color: var(--accent-color); font-size: 4.5rem; /* Increased Size */
     font-weight: 900; letter-spacing: -2px;
+    text-shadow: 0 0 30px rgba(0, 229, 255, 0.5); /* High Visibility */
 }
 .loader-label {
-    font-family: var(--font-mono); color: var(--text-secondary); font-size: 0.7rem;
+    font-family: var(--font-mono); color: #fff; font-size: 0.9rem; /* White for Visibility */
     letter-spacing: 4px; margin-top: 10px; text-transform: uppercase;
 }
 
@@ -457,8 +459,10 @@ body.page-entered .split-bottom { transform: translateY(100%); }
 body.page-entered .loader-content { opacity: 0; transition: opacity 0.4s; }
 
 #transition-wipe {
-    position: fixed; top: 100vh; left: 0; width: 100vw; height: 100vh;
+    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
     background-color: var(--accent-color); z-index: 99999;
+    transform: translateY(100%);
+    display: none;
 }
 .hover-video {
     position: absolute; top: 0; left: 0; width: 100%; height: 100%;
